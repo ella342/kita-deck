@@ -1,65 +1,180 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import { useState, useEffect, useRef, useCallback } from 'react';
+import {
+  Slide00Gate,
+  Slide01Hero,
+  Slide02WhoItsFor,
+  Slide03AboutKita,
+  Slide04ThroughTheYears,
+  Slide05TraditionalVsKita,
+  Slide06ProductOverview,
+  Slide07ReadAnything,
+  Slide08ClassifyExtract,
+  Slide09FraudSignals,
+  Slide10CreditInsights,
+  Slide11CustomAnalysis,
+  Slide12DocumentCoverage,
+  Slide13HitlReview,
+  Slide14ComparedToIndustry,
+  Slide15CustomerOutcomes,
+  Slide16Integration,
+  Slide17LiveDemo,
+  Slide18CTA,
+} from '@/components/slides';
+
+const SLIDES = [
+  Slide00Gate,
+  Slide01Hero,
+  Slide02WhoItsFor,
+  Slide03AboutKita,
+  Slide04ThroughTheYears,
+  Slide05TraditionalVsKita,
+  Slide06ProductOverview,
+  Slide07ReadAnything,
+  Slide08ClassifyExtract,
+  Slide09FraudSignals,
+  Slide10CreditInsights,
+  Slide11CustomAnalysis,
+  Slide12DocumentCoverage,
+  Slide13HitlReview,
+  Slide14ComparedToIndustry,
+  Slide15CustomerOutcomes,
+  Slide16Integration,
+  Slide17LiveDemo,
+  Slide18CTA,
+];
+
+const TOTAL = SLIDES.length;
+const SLIDE_W = 1440;
+const SLIDE_H = 900;
+
+export default function Deck() {
+  const [current, setCurrent] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [scale, setScale] = useState(1);
+  const currentRef = useRef(0);
+  const transitioning = useRef(false);
+
+  // Keep ref in sync
+  useEffect(() => { currentRef.current = current; }, [current]);
+
+  // Scale to fit viewport
+  useEffect(() => {
+    const update = () =>
+      setScale(Math.min(window.innerWidth / SLIDE_W, window.innerHeight / SLIDE_H));
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
+
+  // Fade-transition to a slide index
+  const goTo = useCallback((index) => {
+    const target = Math.max(0, Math.min(index, TOTAL - 1));
+    if (target === currentRef.current || transitioning.current) return;
+    transitioning.current = true;
+    setVisible(false);
+    setTimeout(() => {
+      setCurrent(target);
+      setVisible(true);
+      setTimeout(() => { transitioning.current = false; }, 200);
+    }, 200);
+  }, []);
+
+  // Keyboard navigation
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goTo(currentRef.current + 1);
+      if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   goTo(currentRef.current - 1);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [goTo]);
+
+  const isGate = current === 0;
+  const progress = ((current / (TOTAL - 1)) * 100).toFixed(2);
+  const SlideComponent = SLIDES[current];
+
+  const navBtn = (onClick, label, side) => (
+    <button
+      onClick={onClick}
+      aria-label={label}
+      style={{
+        position: 'fixed',
+        top: '50%',
+        [side]: '16px',
+        transform: 'translateY(-50%)',
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        background: 'rgba(255,255,255,0.08)',
+        border: '1px solid rgba(255,255,255,0.12)',
+        color: 'rgba(255,255,255,0.5)',
+        fontSize: '18px',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 200,
+        transition: 'background 150ms ease, color 150ms ease',
+        backdropFilter: 'blur(4px)',
+        WebkitBackdropFilter: 'blur(4px)',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.16)'; e.currentTarget.style.color = 'rgba(255,255,255,0.9)'; }}
+      onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.color = 'rgba(255,255,255,0.5)'; }}
+    >
+      {side === 'left' ? '←' : '→'}
+    </button>
+  );
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div style={{ position: 'fixed', inset: 0, background: '#000', overflow: 'hidden' }}>
+      {/* Progress bar */}
+      {!isGate && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255,255,255,0.08)', zIndex: 300 }}>
+          <div style={{ height: '100%', background: '#4CAF72', width: `${progress}%`, transition: 'width 300ms ease' }} />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      )}
+
+      {/* Scaled slide */}
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        width: `${SLIDE_W}px`,
+        height: `${SLIDE_H}px`,
+        marginTop: `${-SLIDE_H / 2}px`,
+        marginLeft: `${-SLIDE_W / 2}px`,
+        transform: `scale(${scale})`,
+        transformOrigin: 'center center',
+        opacity: visible ? 1 : 0,
+        transition: 'opacity 200ms ease',
+      }}>
+        <SlideComponent />
+      </div>
+
+      {/* Navigation chrome — hidden on gate slide */}
+      {!isGate && (
+        <>
+          {current > 0    && navBtn(() => goTo(current - 1), 'Previous slide', 'left')}
+          {current < TOTAL - 1 && navBtn(() => goTo(current + 1), 'Next slide', 'right')}
+
+          {/* Slide counter */}
+          <div style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '24px',
+            fontFamily: "'JetBrains Mono', monospace",
+            fontSize: '11px',
+            color: 'rgba(255,255,255,0.35)',
+            letterSpacing: '0.08em',
+            zIndex: 200,
+            pointerEvents: 'none',
+          }}>
+            {String(current + 1).padStart(2, '0')} / {String(TOTAL).padStart(2, '0')}
+          </div>
+        </>
+      )}
     </div>
   );
 }
