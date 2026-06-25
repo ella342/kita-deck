@@ -64,7 +64,7 @@ export default function Deck() {
   const slide = SLIDES[current];
   const Slide = slide.Component;
   const progress = (current / (TOTAL - 1)) * 100;
-  const barTop = slide.fullBleed ? "calc(100% - 7px)" : `calc(50% + ${(H * scale) / 2 - 7}px)`;
+  const barTop = "calc(100% - 7px)";
 
   const arrow = (onClick, side) => (
     <button
