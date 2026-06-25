@@ -21,7 +21,7 @@ function SpecRow({ label, value }) {
 
 export default function S06CreditOfficer() {
   return (
-    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
+    <div style={{ backgroundColor: '#F5F2EB', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
       <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '48px', position: 'relative' }}>
         <div style={{ backgroundImage: 'url(https://app.paper.design/file-assets/01KRW9RKQ8CMS38RV87YYFQ9EV/01KRWC6EJA4G1AXHVAH2Z43R43.png)', backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
         <div style={{ color: '#8A9E8F', fontFamily: '"Geist Mono", system-ui, sans-serif', fontSize: '14px', fontWeight: 600, letterSpacing: '0.14em', lineHeight: '18px', opacity: '0.7', position: 'absolute', right: '64px', textTransform: 'uppercase', top: '88px', width: 'max-content' }}>completes loan file</div>
@@ -34,12 +34,12 @@ export default function S06CreditOfficer() {
           </div>
           <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px', width: '656px' }}>
             <div style={{ color: '#2D6A3F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '50px', fontWeight: 700, letterSpacing: '-0.04em', lineHeight: '100%' }}>01</div>
-            <div style={{ color: '#1F2421', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '56px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>The 24/7 agent that closes the loan file.</div>
+            <div style={{ color: '#1F2421', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '56px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>The 24/7 agent that gets every document in.</div>
           </div>
           <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginTop: '28px', width: '656px' }}>
             <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '165%', marginBottom: '28px' }}>Engages every borrower the moment they apply — on SMS, email, or web chat, the channel they actually use. Speaks their language, chases documents until the file is complete, then hands a 100%-complete file to the AI Underwriter.</div>
             <div style={{ backgroundColor: '#0000001A', flexShrink: 0, height: '1px', width: '100%' }} />
-            <SpecRow label="CHANNELS" value="SMS · Email · Web chat" />
+            <SpecRow label="CHANNELS" value="SMS · Email · WhatsApp · Web chat" />
             <SpecRow label="VALIDATION" value="Real-time upload & validation on the spot" />
             <SpecRow label="LANGUAGES" value="English · Spanish · Mandarin · 30+ more" />
             <SpecRow label="HANDOFF" value="100%-complete file to AI Underwriter" />

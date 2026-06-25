@@ -99,7 +99,7 @@ export default function Gate() {
           Request access.
         </h1>
         <p style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px,2.4vw,17px)", lineHeight: 1.5, maxWidth: "30ch" }}>
-          Enter your work email to view the Kita community-lending deck.
+          Enter your work email to view the Kita deck for community lenders.
         </p>
 
         <form onSubmit={onSubmit} style={{ width: "100%", display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>

@@ -35,7 +35,7 @@ export default function S12CTA() {
             <span style={{ color: "#52B07A", fontSize: "clamp(13px,1.1vw,17px)", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase" }}>get started</span>
           </motion.div>
           <motion.h1 variants={item} style={{ margin: 0, fontWeight: 700, fontSize: "clamp(40px, 6.8vw, 96px)", lineHeight: 1.02, letterSpacing: "-0.03em" }}>
-            <span style={{ color: "#16291C" }}>Kita is AI for underwriting.</span><br />
+            <span style={{ color: "#16291C" }}>Kita is AI for your underwriters.</span><br />
             <span style={{ color: "#2D6A3F" }}>Ready when you are.</span>
           </motion.h1>
           <motion.p variants={item} style={{ margin: "clamp(10px,1vw,14px) 0 0", color: "#5A7060", fontSize: "clamp(15px, 1.5vw, 22px)", lineHeight: 1.45, maxWidth: "820px" }}>

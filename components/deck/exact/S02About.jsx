@@ -31,12 +31,12 @@ export default function S02About() {
           style={{ backgroundImage: `url(${LOGO})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center", width: "clamp(200px, 22vw, 316px)", height: "clamp(134px, 14.7vw, 211px)", flexShrink: 0 }} />
         <motion.h2 variants={item}
           style={{ margin: 0, fontWeight: 800, fontSize: "clamp(34px, 5.4vw, 64px)", lineHeight: 1.06, letterSpacing: "-0.03em" }}>
-          <span style={{ color: "#1A3320" }}>Underwrite borrowers</span><br />
+          <span style={{ color: "#1A3320" }}>Underwrite anyone</span><br />
           <span style={{ color: "#318857" }}>in minutes.</span>
         </motion.h2>
         <motion.p variants={item}
           style={{ margin: 0, color: "#5A7A60", fontSize: "clamp(16px, 1.7vw, 24px)", lineHeight: 1.55, maxWidth: "min(760px, 92%)" }}>
-          AI-native credit assessment. Kita reads messy borrower documents and turns them into decision-ready files. Live with lenders in 4 markets.
+          Kita reads messy borrower documents and turns them into clean, cited, decision-ready files — so your underwriters spend their time deciding, not chasing paper. Live with lenders in 4 markets.
         </motion.p>
         <motion.div variants={item} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, marginTop: "clamp(8px,1vw,16px)" }}>
           <div style={{ color: "#0A1F0F", fontWeight: 800, fontSize: "clamp(30px, 3vw, 42px)", letterSpacing: "-0.03em", lineHeight: 1 }}>100K+</div>

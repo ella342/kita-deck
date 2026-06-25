@@ -37,18 +37,18 @@ function Th({ w, children, right }) {
 
 export default function S09Dashboard() {
   return (
-    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
+    <div style={{ backgroundColor: '#F5F2EB', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
       <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '48px' }}>
         <div style={{ backgroundImage: 'url(https://app.paper.design/file-assets/01KRW9RKQ8CMS38RV87YYFQ9EV/653GDG4AC07XB0TH73X9RTHSZY.png)', backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
-        <div style={{ color: '#8A9E8F', fontFamily: mono, fontSize: '14px', fontWeight: 600, letterSpacing: '0.14em', lineHeight: '18px', opacity: '0.7', textTransform: 'uppercase' }}>end-to-end underwriting</div>
+        <div style={{ color: '#8A9E8F', fontFamily: mono, fontSize: '14px', fontWeight: 600, letterSpacing: '0.14em', lineHeight: '18px', opacity: '0.7', textTransform: 'uppercase' }}>your pipeline, one screen</div>
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '12px', paddingInline: '64px', paddingTop: '18px' }}>
         <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px' }}>
           <div style={{ backgroundColor: '#418D62', borderRadius: '50%', flexShrink: 0, height: '6px', width: '6px' }} />
           <div style={{ color: '#418D62', fontFamily: mono, fontSize: '13px', fontWeight: 500, letterSpacing: '0.18em', lineHeight: '16px', textTransform: 'uppercase' }}>full pipeline</div>
         </div>
-        <div style={{ color: '#1A3320', fontFamily: sans, fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>Automated end-to-end underwriting.</div>
-        <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', letterSpacing: '-0.005em', lineHeight: '27px', marginTop: '2px', maxWidth: '1040px' }}>Every file moves on its own. The AI Credit Officer chases docs, Capture reads them, and the AI Underwriter drafts the memo. Your officers watch one screen and step in only to decide.</div>
+        <div style={{ color: '#1A3320', fontFamily: sans, fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>Your whole pipeline on one screen.</div>
+        <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', letterSpacing: '-0.005em', lineHeight: '27px', marginTop: '2px', maxWidth: '1040px' }}>Every file moves on its own: the AI Credit Officer chases docs, Capture reads them, the AI Underwriter drafts the memo. Your officers see it all in one place and stay in control of every decision.</div>
       </div>
       <div style={{ backgroundColor: '#FCFBF7', borderColor: '#00000016', borderRadius: '18px', borderStyle: 'solid', borderWidth: '1px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginInline: '64px', marginTop: '26px', overflow: 'clip' }}>
         <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '16px', height: '78px', justifyContent: 'space-between', paddingBlock: '20px', paddingInline: '26px' }}>
