@@ -35,7 +35,7 @@ export default function S01Title() {
           </motion.h1>
           <motion.p variants={item}
             style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px, 1.5vw, 22px)", lineHeight: 1.45, letterSpacing: "-0.005em", maxWidth: "820px" }}>
-            Kita is responsible AI for community lenders. Every recommendation cited and auditable, every decision still yours, so a small team can say yes to more of your community.
+            Kita is responsible AI for underwriting, built for CDFIs, community lenders, and credit unions. Every recommendation cited and auditable, every decision still yours, so a small team can say yes to more of your community.
           </motion.p>
         </motion.div>
         <motion.div variants={item}
