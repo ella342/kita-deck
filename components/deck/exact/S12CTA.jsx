@@ -43,7 +43,7 @@ export default function S12CTA() {
           </motion.p>
           <motion.div variants={item} style={{ display: "flex", flexDirection: "column", gap: "clamp(8px,0.8vw,14px)", marginTop: "clamp(16px,1.6vw,28px)" }}>
             <span style={{ color: "#8A9E8F", fontFamily: '"Geist Mono", monospace', fontSize: "clamp(11px,1vw,13px)", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase" }}>book a demo →</span>
-            <a href="mailto:founders@kita.ai" style={{ color: "#2D6A3F", fontWeight: 800, fontSize: "clamp(20px,2.4vw,30px)", letterSpacing: "-0.02em", textDecoration: "none" }}>founders@kita.ai</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=founders@kita.ai&su=Kita%20demo%20request" target="_blank" rel="noopener noreferrer" style={{ color: "#2D6A3F", fontWeight: 800, fontSize: "clamp(20px,2.4vw,30px)", letterSpacing: "-0.02em", textDecoration: "none" }}>founders@kita.ai</a>
           </motion.div>
         </motion.div>
 
