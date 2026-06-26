@@ -44,7 +44,6 @@ export default function S07Underwriter() {
             <SpecRow label="EXPLAINABLE" value="Full reasoning shown and auditable end to end" />
             <SpecRow label="HUMAN-LED" value="The final decision always stays in human hands" />
             <SpecRow label="POLICY" value="Calibrated on your risk policy, not a generic prompt" />
-            <SpecRow label="FRAUD" value="Forgery, tampering & impersonation detection" />
           </div>
         </div>
         <div style={{ boxSizing: 'border-box', flexShrink: 0, height: '560px', position: 'relative', width: '519px' }}>
