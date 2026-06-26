@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const PASSWORD = "ServeYourCommunity";
+const PASSWORD = "community";
 
 export async function POST(request) {
   let password = "";
