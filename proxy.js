@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export function proxy(request) {
   const hasAccess = request.cookies.get("kita_access")?.value === "2";
   if (!hasAccess) {
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.redirect(new URL("/community", request.url));
   }
   return NextResponse.next();
 }
