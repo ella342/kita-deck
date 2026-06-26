@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 export default function Gate() {
   const router = useRouter();
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [status, setStatus] = useState("idle"); // idle | loading | error
   const [error, setError] = useState("");
 
@@ -103,26 +104,63 @@ export default function Gate() {
         </p>
 
         <form onSubmit={onSubmit} style={{ width: "100%", display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
-          <input
-            type="password"
-            required
-            autoFocus
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-            aria-label="Password"
-            style={{
-              width: "100%",
-              padding: "15px 18px",
-              fontSize: "16px",
-              fontFamily: "'Geist', sans-serif",
-              background: "#FFFFFF",
-              border: "1px solid #D0CCC0",
-              borderRadius: "10px",
-              color: "#0A1F0F",
-              outline: "none",
-            }}
-          />
+          <div style={{ position: "relative", width: "100%" }}>
+            <input
+              type={showPassword ? "text" : "password"}
+              required
+              autoFocus
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              aria-label="Password"
+              style={{
+                width: "100%",
+                padding: "15px 50px 15px 18px",
+                fontSize: "16px",
+                fontFamily: "'Geist', sans-serif",
+                background: "#FFFFFF",
+                border: "1px solid #D0CCC0",
+                borderRadius: "10px",
+                color: "#0A1F0F",
+                outline: "none",
+              }}
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword((v) => !v)}
+              aria-label={showPassword ? "Hide password" : "Show password"}
+              title={showPassword ? "Hide password" : "Show password"}
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "12px",
+                transform: "translateY(-50%)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "6px",
+                background: "transparent",
+                border: "none",
+                cursor: "pointer",
+                color: "#8A9E8F",
+                lineHeight: 0,
+              }}
+            >
+              {showPassword ? (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
+                  <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68" />
+                  <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61" />
+                  <line x1="2" y1="2" x2="22" y2="22" />
+                </svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              )}
+            </button>
+          </div>
           <button
             type="submit"
             disabled={status === "loading"}
