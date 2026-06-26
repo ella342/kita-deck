@@ -3,24 +3,33 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-const PASSWORD = "ServeYourCommunity";
-
 export default function Gate() {
   const router = useRouter();
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("idle"); // idle | loading | error
   const [error, setError] = useState("");
 
-  function onSubmit(e) {
+  async function onSubmit(e) {
     e.preventDefault();
-    setError("");
-    if (password.trim() !== PASSWORD) {
-      setStatus("error");
-      setError("Incorrect password. Try again.");
-      return;
-    }
     setStatus("loading");
-    router.push("/deck");
+    setError("");
+    try {
+      const res = await fetch("/api/unlock", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.ok) {
+        setStatus("error");
+        setError(data.error || "Incorrect password. Try again.");
+        return;
+      }
+      router.push("/deck");
+    } catch {
+      setStatus("error");
+      setError("Network error. Please try again.");
+    }
   }
 
   return (
