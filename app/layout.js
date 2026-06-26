@@ -1,6 +1,6 @@
 import "./globals.css";
 
-const TITLE = "Kita - AI for Underwriting";
+const TITLE = "Kita — AI for Underwriting";
 const DESCRIPTION =
   "AI-native credit assessment for community lenders. Kita reads borrower documents, checks for fraud, and drafts the credit memo.";
 
