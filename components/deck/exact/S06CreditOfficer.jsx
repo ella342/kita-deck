@@ -37,7 +37,7 @@ export default function S06CreditOfficer() {
             <div style={{ color: '#1F2421', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '56px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>The 24/7 agent that gets every document in.</div>
           </div>
           <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginTop: '28px', width: '656px' }}>
-            <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '165%', marginBottom: '28px' }}>Engages every borrower the moment they apply — on SMS, email, or web chat, the channel they actually use. Speaks their language, chases documents until the file is complete, then hands a 100%-complete file to the AI Underwriter.</div>
+            <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '165%', marginBottom: '28px' }}>Engages every borrower the moment they apply, on SMS, email, or web chat, the channel they actually use. Speaks their language, chases documents until the file is complete, then hands a 100%-complete file to the AI Underwriter.</div>
             <div style={{ backgroundColor: '#0000001A', flexShrink: 0, height: '1px', width: '100%' }} />
             <SpecRow label="CHANNELS" value="SMS · Email · WhatsApp · Web chat" />
             <SpecRow label="VALIDATION" value="Real-time upload & validation on the spot" />
@@ -63,7 +63,7 @@ export default function S06CreditOfficer() {
               <div style={{ backgroundColor: '#E8E4DC', flexShrink: 0, height: '1px', width: '100%' }} />
               <motion.div variants={thread} initial="hidden" animate="show" style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <motion.div variants={msg} style={{ alignSelf: 'flex-start', backgroundColor: '#F2F1EC', borderRadius: '4px 16px 16px 16px', maxWidth: '80%', paddingBlock: '12px', paddingInline: '16px', transformOrigin: 'bottom left' }}>
-                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>Hi Rosa — this is Kita, helping with your $85k SBA microloan. To finish your file I still need two documents: your renewed business license and the 2024 P&amp;L.</div>
+                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>Hi Rosa, this is Kita, helping with your $85k SBA microloan. To finish your file I still need two documents: your renewed business license and the 2024 P&amp;L.</div>
                 </motion.div>
                 <motion.div variants={msg} style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
                   <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>sending the P&amp;L now</div>
@@ -82,7 +82,7 @@ export default function S06CreditOfficer() {
                     <div style={{ color: '#4CAF72', fontFamily: 'system-ui, sans-serif', fontSize: '11px', lineHeight: '11px' }}>✓</div>
                     <div style={{ color: '#4CAF72', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', fontWeight: 600, letterSpacing: '0.08em', lineHeight: '12px' }}>DOC ACCEPTED · AUTO-VALIDATED</div>
                   </div>
-                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>P&amp;L 2024 received and validated — deposits reconcile within 2%. One item left: the renewed business license.</div>
+                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>P&amp;L 2024 received and validated. Deposits reconcile within 2%. One item left: the renewed business license.</div>
                 </motion.div>
                 <motion.div variants={msg} style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
                   <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>license coming today</div>

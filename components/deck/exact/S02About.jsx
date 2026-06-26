@@ -36,7 +36,7 @@ export default function S02About() {
         </motion.h2>
         <motion.p variants={item}
           style={{ margin: 0, color: "#5A7A60", fontSize: "clamp(16px, 1.7vw, 24px)", lineHeight: 1.55, maxWidth: "min(760px, 92%)" }}>
-          Kita reads messy borrower documents and turns them into clean, cited, decision-ready files — so your underwriters spend their time deciding, not chasing paper. Live with lenders in 4 markets.
+          Kita reads messy borrower documents and turns them into clean, cited, decision-ready files , so your underwriters spend their time deciding, not chasing paper. Live with lenders in 4 markets.
         </motion.p>
         <motion.div variants={item} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, marginTop: "clamp(8px,1vw,16px)" }}>
           <div style={{ color: "#0A1F0F", fontWeight: 800, fontSize: "clamp(30px, 3vw, 42px)", letterSpacing: "-0.03em", lineHeight: 1 }}>100K+</div>

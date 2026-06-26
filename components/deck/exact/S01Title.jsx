@@ -34,7 +34,7 @@ export default function S01Title() {
           </motion.h1>
           <motion.p variants={item}
             style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px, 1.5vw, 22px)", lineHeight: 1.45, letterSpacing: "-0.005em", maxWidth: "820px" }}>
-            Kita is an AI underwriting team for community lenders — CDFIs, credit unions, and mission-driven funds. We take the tedious, manual work off your underwriters so a small team can process far more files and say yes to more of your community.
+            Kita is responsible AI for community lenders: CDFIs, credit unions, and mission-driven funds. An AI underwriting team that takes the tedious, manual work off your underwriters, with every recommendation cited and auditable and every decision still yours, so a small team can process far more files and say yes to more of your community.
           </motion.p>
         </motion.div>
         <motion.div variants={item}

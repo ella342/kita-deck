@@ -38,12 +38,13 @@ export default function S07Underwriter() {
             <div style={{ color: '#1F2421', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '56px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>Credit memo drafts instantly.</div>
           </div>
           <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginTop: '28px', width: '656px' }}>
-            <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '165%', marginBottom: '28px' }}>Kita runs the same analysis your underwriters do. By closely interviewing your team, we automate financial spreading and competitive analysis, then draft a comprehensive credit memo — with a citation to every document and source — ready for your review and decisioning.</div>
+            <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '165%', marginBottom: '28px' }}>Kita runs the same analysis your underwriters do. By closely interviewing your team, we automate financial spreading and competitive analysis, then draft a comprehensive credit memo, with a citation to every document and source. Every recommendation is fully explainable and auditable end to end, and the final decision always stays in your underwriters&apos; hands.</div>
             <div style={{ backgroundColor: '#0000001A', flexShrink: 0, height: '1px', width: '100%' }} />
+            <SpecRow label="CITATIONS" value="Every data point cited to its source document" />
+            <SpecRow label="EXPLAINABLE" value="Full reasoning shown and auditable end to end" />
+            <SpecRow label="HUMAN-LED" value="The final decision always stays in human hands" />
             <SpecRow label="POLICY" value="Calibrated on your risk policy, not a generic prompt" />
             <SpecRow label="FRAUD" value="Forgery, tampering & impersonation detection" />
-            <SpecRow label="CITATIONS" value="Every data point cited to its source document" />
-            <SpecRow label="DECISION" value="Your team makes the final decision" />
           </div>
         </div>
         <div style={{ boxSizing: 'border-box', flexShrink: 0, height: '560px', position: 'relative', width: '519px' }}>
@@ -62,7 +63,7 @@ export default function S07Underwriter() {
               <div style={{ backgroundColor: '#00000012', flexShrink: 0, height: '1px' }} />
               <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 <div style={{ color: '#8A9E8F', fontFamily: '"Geist Mono", system-ui, sans-serif', fontSize: '11px', fontWeight: 600, letterSpacing: '0.12em', lineHeight: '14px', textTransform: 'uppercase' }}>Supporting evidence · cited</div>
-                <EvRow claim="DSCR 1.42× — above policy floor" src="bank_stmt.pdf" />
+                <EvRow claim="DSCR 1.42×, above policy floor" src="bank_stmt.pdf" />
                 <EvRow claim="Revenue +18% year over year" src="pl_2024.pdf" />
                 <EvRow claim="Cash buffer 4.1 months payroll" src="bank_stmt.pdf" />
                 <EvRow claim="Mission fit: minority-owned, LMI census tract" src="application.pdf" />

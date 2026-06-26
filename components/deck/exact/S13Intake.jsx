@@ -36,11 +36,11 @@ export default function S13Intake() {
           </div>
           <div style={{ color: '#1A3320', fontFamily: sans, fontSize: '56px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%', maxWidth: '780px' }}>Every application lands underwriting-ready.</div>
         </div>
-        <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', lineHeight: '27px', maxWidth: '380px', textAlign: 'right' }}>Borrowers apply through Kita&apos;s AI-native application and portal — guided, multilingual, on any device — so a complete, structured file is forming from the very first interaction.</div>
+        <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', lineHeight: '27px', maxWidth: '380px', textAlign: 'right' }}>Borrowers apply through Kita&apos;s AI-native application and portal, guided, multilingual, on any device, so a complete, structured file is forming from the very first interaction.</div>
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '24px', height: '430px', paddingInline: '56px' }}>
         <ICard n="01" title="AI-Native Application" body="A conversational application that adapts to each borrower and loan type. It asks only what's relevant, validates answers in real time, and structures every response for underwriting." points={["Adapts per loan type", "Real-time validation", "Structured for the credit memo"]} />
-        <ICard n="02" title="AI-Native Borrower Portal" body="A white-label portal where borrowers upload documents, track status, and message your team — in their language, on web or mobile." points={["Your brand, end to end", "Upload · status · messaging", "Web · mobile · 30+ languages"]} />
+        <ICard n="02" title="AI-Native Borrower Portal" body="A white-label portal where borrowers upload documents, track status, and message your team, in their language, on web or mobile." points={["Your brand, end to end", "Upload · status · messaging", "Web · mobile · 30+ languages"]} />
       </div>
     </div>
   );

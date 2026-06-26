@@ -23,11 +23,11 @@ export default function S04Problem() {
           </div>
           <div style={{ color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%', maxWidth: '760px' }}>Good borrowers fall through the cracks.</div>
         </div>
-        <div style={{ color: '#5A7060', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right', width: '459px' }}>Lean teams stitch together manual tools and chase documents for weeks. Files pile up, and the community you exist to serve waits — or gets lost along the way.</div>
+        <div style={{ color: '#5A7060', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right', width: '459px' }}>Lean teams stitch together manual tools and chase documents for weeks. Files pile up, and the community you exist to serve waits, or gets lost along the way.</div>
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '22px', paddingBottom: '28px', paddingInline: '56px' }}>
         <div style={{ display: 'flex', gap: '22px' }}>
-          <PCard n="01" fixed title="Document collection drags on for weeks." body="Files arrive piecemeal over email, Dropbox, even paper — and chasing them can take 30 days to a year." />
+          <PCard n="01" fixed title="Document collection drags on for weeks." body="Files arrive piecemeal over email, Dropbox, even paper, and chasing them can take 30 days to a year." />
           <PCard n="02" title="A patchwork of disconnected tools." body="Spread financials in one system, underwrite in another, email PDFs to committee. Nothing talks to each other." />
         </div>
         <div style={{ display: 'flex', gap: '22px' }}>
