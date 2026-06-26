@@ -3,33 +3,24 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+const PASSWORD = "ServeYourCommunity";
+
 export default function Gate() {
   const router = useRouter();
-  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [status, setStatus] = useState("idle"); // idle | loading | error
   const [error, setError] = useState("");
 
-  async function onSubmit(e) {
+  function onSubmit(e) {
     e.preventDefault();
-    setStatus("loading");
     setError("");
-    try {
-      const res = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) {
-        setStatus("error");
-        setError(data.error || "Something went wrong. Try again.");
-        return;
-      }
-      router.push("/deck");
-    } catch {
+    if (password.trim() !== PASSWORD) {
       setStatus("error");
-      setError("Network error. Please try again.");
+      setError("Incorrect password. Try again.");
+      return;
     }
+    setStatus("loading");
+    router.push("/deck");
   }
 
   return (
@@ -96,21 +87,21 @@ export default function Gate() {
             fontSize: "clamp(44px, 8vw, 68px)",
           }}
         >
-          Request access.
+          Enter password.
         </h1>
         <p style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px,2.4vw,17px)", lineHeight: 1.5, maxWidth: "30ch" }}>
-          Enter your work email to view the Kita deck for community lenders.
+          Enter the password to view the Kita deck for community lenders.
         </p>
 
         <form onSubmit={onSubmit} style={{ width: "100%", display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
           <input
-            type="email"
+            type="password"
             required
             autoFocus
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@company.com"
-            aria-label="Work email"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            aria-label="Password"
             style={{
               width: "100%",
               padding: "15px 18px",
