@@ -39,11 +39,11 @@ export default function S10Integration() {
           <div style={{ color: '#0A1F0F', fontFamily: sans, fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%' }}>Run it whole, or slot it in.</div>
         </div>
         <div style={{ boxSizing: 'border-box', maxWidth: '380px', paddingBottom: '8px' }}>
-          <div style={{ color: '#6B6F6A', fontFamily: sans, fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right' }}>Run the whole journey end-to-end on Kita&apos;s AI-native Magic LOS, or slot individual solutions into the workflow you already run, wherever they make sense. No rip-and-replace.</div>
+          <div style={{ color: '#6B6F6A', fontFamily: sans, fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right' }}>Run the whole journey end-to-end on Kita&apos;s AI-native Intelligent LOS, or slot individual solutions into the workflow you already run, wherever they make sense. No rip-and-replace.</div>
         </div>
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '20px', height: '240px', marginTop: '-39px' }}>
-        <ConnectCard n="I." title="Kita Magic LOS" body="Run the whole journey end-to-end on our AI-native loan origination system: application, document collection, underwriting, and decisioning in one place." />
+        <ConnectCard n="I." title="Kita Intelligent LOS" body="Run the whole journey end-to-end on our AI-native loan origination system: application, document collection, underwriting, and decisioning in one place." />
         <ConnectCard n="II." title="Slot into your stack" body="Slot any Kita solution into the LOS you already run, via REST API: Capture, the AI Credit Officer, the AI Underwriter, or the AI-native application and borrower portal that keep borrowers in touch with your team and confident at every step." />
       </div>
       <div style={{ backgroundColor: '#EDEAE0', borderColor: '#D0CCC0', borderRadius: '12px', borderStyle: 'solid', borderWidth: '1px', boxSizing: 'border-box', display: 'flex', marginTop: '-39px' }}>
