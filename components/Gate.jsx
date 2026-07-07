@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 // cookie), then refreshes so the server component renders the deck at the
 // same URL. Copy is configurable per deck.
 export default function Gate({
+  deck = "community",
   blurb = "Enter the password to view the Kita deck for community lenders.",
   footerLabel = "Kita · Community Lending",
 }) {
@@ -24,7 +25,7 @@ export default function Gate({
       const res = await fetch("/api/unlock", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ password, deck }),
       });
       const data = await res.json();
       if (!res.ok || !data.ok) {

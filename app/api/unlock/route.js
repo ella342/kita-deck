@@ -1,23 +1,28 @@
 import { NextResponse } from "next/server";
-
-const PASSWORD = "signal";
+import { DECKS } from "@/lib/decks";
 
 export async function POST(request) {
   let password = "";
+  let deck = "";
   try {
     const body = await request.json();
     password = (body.password || "").trim();
+    deck = (body.deck || "community").trim();
   } catch {
     return NextResponse.json({ ok: false, error: "Invalid request." }, { status: 400 });
   }
 
-  if (password !== PASSWORD) {
+  const cfg = DECKS[deck];
+  if (!cfg) {
+    return NextResponse.json({ ok: false, error: "Invalid request." }, { status: 400 });
+  }
+
+  if (password !== cfg.password) {
     return NextResponse.json({ ok: false, error: "Incorrect password. Try again." }, { status: 401 });
   }
 
   const res = NextResponse.json({ ok: true });
-  // Bump this token to invalidate all existing sessions (logs everyone out).
-  res.cookies.set("kita_access", "3", {
+  res.cookies.set(cfg.cookie, cfg.token, {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",
