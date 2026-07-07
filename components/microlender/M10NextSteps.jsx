@@ -12,7 +12,7 @@ function Step({ n, title, body }) {
 
 export default function M10NextSteps() {
   return (
-    <div style={{ backgroundColor: '#F4EFE3', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', position: 'relative', WebkitFontSmoothing: 'antialiased' }}>
+    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', position: 'relative', WebkitFontSmoothing: 'antialiased' }}>
       <div aria-hidden style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '320px', backgroundImage: 'radial-gradient(circle farthest-corner at 50% 50% in oklab, oklab(91% 0.040 0.080 / 65%) 0%, oklab(88% 0.050 0.060 / 25%) 30%, oklab(0% 0 0 / 0%) 65%)', pointerEvents: 'none' }} />
       <div style={{ boxSizing: 'border-box', display: 'flex', paddingInline: '64px', paddingTop: '48px', position: 'relative' }}>
         <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />

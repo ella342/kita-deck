@@ -15,7 +15,7 @@ export default function M03Problem() {
       <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', marginTop: '14px', maxWidth: '1240px' }}>
         The credit gap is massive.<br />Underwriting is the bottleneck.
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '56px', height: '520px', marginTop: '28px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '56px', height: '498px', marginTop: '28px' }}>
         {/* The opportunity */}
         <div style={{ backgroundColor: '#EDEAE0', borderRadius: '20px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', height: '530px', paddingBlock: '40px', paddingInline: '44px' }}>
           <div style={monoLabel('#2D6A3F')}>The opportunity</div>

@@ -26,18 +26,29 @@ body {
 }
 
 /* ---- Interactive hover lift on slide components ---- */
-.deck-stage [style*="background-color: rgb(237, 234, 224)"],
-.deck-stage [style*="background-color: rgb(252, 251, 247)"],
-.deck-stage [style*="background-color: rgb(255, 255, 255)"] {
+.deck-stage [style*="background-color: rgb(237, 234, 224)"]:not(.hover-group *),
+.deck-stage [style*="background-color: rgb(252, 251, 247)"]:not(.hover-group *),
+.deck-stage [style*="background-color: rgb(255, 255, 255)"]:not(.hover-group *) {
   transition: transform 280ms cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 280ms ease;
   will-change: transform;
 }
-.deck-stage [style*="background-color: rgb(237, 234, 224)"]:hover,
-.deck-stage [style*="background-color: rgb(252, 251, 247)"]:hover,
-.deck-stage [style*="background-color: rgb(255, 255, 255)"]:hover {
+.deck-stage [style*="background-color: rgb(237, 234, 224)"]:not(.hover-group *):hover,
+.deck-stage [style*="background-color: rgb(252, 251, 247)"]:not(.hover-group *):hover,
+.deck-stage [style*="background-color: rgb(255, 255, 255)"]:not(.hover-group *):hover {
   transform: translateY(-6px) scale(1.012);
   box-shadow: 0 22px 48px rgba(20, 40, 25, 0.16) !important;
   position: relative;
+  z-index: 3;
+}
+
+/* Composite mockups (doc + callouts + badges) lift as one unit so no piece
+   slides over its neighbors on hover. */
+.deck-stage .hover-group {
+  transition: transform 280ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  will-change: transform;
+}
+.deck-stage .hover-group:hover {
+  transform: translateY(-6px) scale(1.012);
   z-index: 3;
 }
 
@@ -93,7 +104,7 @@ body {
 .deck-stage [style*="background-color: rgb(45, 90, 55)"],
 .deck-stage [style*="background-color: rgb(230, 239, 231)"],
 .deck-stage [style*="background-color: rgb(242, 241, 236)"],
-.deck-stage [style*="background-color: rgb(26, 26, 26)"] {
+.deck-stage [style*="background-color: rgb(26, 26, 26)"]:not(.hover-group *) {
   transition: transform 200ms cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 200ms ease, filter 200ms ease;
 }
 .deck-stage [style*="background-color: rgb(228, 240, 232)"]:hover,
@@ -105,7 +116,7 @@ body {
 .deck-stage [style*="background-color: rgb(45, 90, 55)"]:hover,
 .deck-stage [style*="background-color: rgb(230, 239, 231)"]:hover,
 .deck-stage [style*="background-color: rgb(242, 241, 236)"]:hover,
-.deck-stage [style*="background-color: rgb(26, 26, 26)"]:hover {
+.deck-stage [style*="background-color: rgb(26, 26, 26)"]:not(.hover-group *):hover {
   transform: scale(1.07);
   box-shadow: 0 6px 18px rgba(20, 40, 25, 0.18);
   position: relative;

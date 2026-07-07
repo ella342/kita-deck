@@ -63,7 +63,7 @@ export default function M06Methodology() {
           <Spec label="Resolution" body="150 dpi to 4K. Auto-upscale on degraded inputs." />
         </div>
         {/* Right: VLM extraction mock */}
-        <div style={{ boxSizing: 'border-box', flexShrink: 0, height: '555px', position: 'relative', width: '545px' }}>
+        <div className="hover-group" style={{ boxSizing: 'border-box', flexShrink: 0, height: '555px', position: 'relative', width: '545px' }}>
           {/* Document */}
           <div style={{ position: 'absolute', top: '16px', left: '18px', backgroundColor: '#FFFFFF', borderRadius: '10px', boxShadow: '#0000001A 0px 6px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px', height: '512px', justifyContent: 'space-between', overflow: 'clip', paddingBlock: '24px', paddingInline: '22px', width: '384px' }}>
             <div style={{ alignItems: 'flex-start', display: 'flex', justifyContent: 'space-between' }}>
@@ -129,7 +129,7 @@ export default function M06Methodology() {
         </div>
       </div>
       {/* Stat chips */}
-      <div style={{ position: 'absolute', top: '762px', left: '808px', alignItems: 'flex-end', display: 'flex', gap: '19px', justifyContent: 'flex-end' }}>
+      <div style={{ position: 'absolute', top: '748px', right: '91px', alignItems: 'flex-end', display: 'flex', gap: '19px', justifyContent: 'flex-end' }}>
         <div style={{ alignItems: 'center', backgroundColor: '#EDEAE0', borderRadius: '10px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '3px', height: '78px', justifyContent: 'center', paddingBlock: '12px', paddingInline: '20px', width: '150px' }}>
         <div style={{ alignSelf: 'stretch', color: '#2D6A3F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '34px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '100%' }}>50+</div>
           <div style={{ alignSelf: 'stretch', color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '14px', lineHeight: '130%' }}>document types</div>

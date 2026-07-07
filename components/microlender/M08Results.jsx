@@ -47,7 +47,7 @@ function DecileCard({ c }) {
 
 export default function M08Results() {
   return (
-    <div style={{ backgroundColor: '#F4EFE3', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased' }}>
+    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased' }}>
       <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '48px' }}>
         <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
       </div>
@@ -62,14 +62,14 @@ export default function M08Results() {
       </div>
       <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '20px', paddingInline: '64px', paddingTop: '24px' }}>
         <div style={{ boxSizing: 'border-box', display: 'flex', gap: '24px', width: '100%' }}>
-          <div style={{ backgroundColor: '#EDEAE0', border: '1px solid #00000014', borderRadius: '16px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', gap: '8px', height: '225px', paddingBlock: '21px 24px', paddingInline: '28px' }}>
+          <div style={{ backgroundColor: '#EDEAE0', border: '1px solid #00000014', borderRadius: '16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, gap: '8px', height: '208px', paddingBlock: '21px 24px', paddingInline: '28px', width: '620px' }}>
             <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '19px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: '128%' }}>With Kita:</div>
             <div style={{ color: '#2D6A3F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '48px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '100%' }}>+2.4 GINI</div>
             <div style={{ color: '#4A5247', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '16px', lineHeight: '145%', maxWidth: '580px' }}>
               In an 8,000-document backtest, Kita increased predictive power by 15% relative over the bureau score alone.
             </div>
           </div>
-          <div style={{ backgroundColor: '#EDEAE0', border: '1px solid #00000014', borderRadius: '16px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', gap: '8px', height: '225px', paddingBlock: '19px 24px', paddingInline: '28px' }}>
+          <div style={{ backgroundColor: '#EDEAE0', border: '1px solid #00000014', borderRadius: '16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, gap: '8px', height: '208px', paddingBlock: '19px 24px', paddingInline: '28px', width: '620px' }}>
             <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '19px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: '128%' }}>Richest Docs: Bank Statements, Payslips, etc.</div>
             <div style={{ color: '#2D6A3F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '48px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '100%' }}>+7.0 GINI</div>
             <div style={{ color: '#4CAF72', fontFamily: '"Geist Mono", system-ui, sans-serif', fontSize: '14px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '18px', textTransform: 'uppercase' }}>+0.036 AUC</div>

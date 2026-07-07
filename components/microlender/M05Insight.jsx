@@ -34,7 +34,7 @@ export default function M05Insight() {
           Document uploads contain rich signals. Kita uncovers them.
         </div>
       </div>
-      <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '8px', flex: 1 }}>
+      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '16px', flex: 1 }}>
         {/* Left: pipeline + signal rows + decisions bar */}
         <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, width: '760px' }}>
           <div style={{ color: '#2D6A3F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '18px', fontWeight: 800, letterSpacing: '0.14em', lineHeight: '24px', textTransform: 'uppercase' }}>
