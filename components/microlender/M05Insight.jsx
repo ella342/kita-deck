@@ -36,7 +36,7 @@ export default function M05Insight() {
       </div>
       <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '8px', flex: 1 }}>
         {/* Left: pipeline + signal rows + decisions bar */}
-        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, marginTop: '34px', width: '760px' }}>
+        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, marginTop: '20px', width: '760px' }}>
           <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '14px' }}>
             {['Documents', 'Signals', 'Decisions'].map((step, i) => (
               <div key={step} style={{ alignItems: 'center', display: 'flex', gap: '14px' }}>
@@ -49,7 +49,7 @@ export default function M05Insight() {
               </div>
             ))}
           </div>
-          <div style={{ color: '#0A1F0F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '22px', fontWeight: 500, lineHeight: '30px', marginTop: '10px' }}>
+          <div style={{ color: '#0A1F0F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '22px', fontWeight: 500, lineHeight: '30px', marginTop: '18px' }}>
             Using frontier vision AI pipelines developed out of Stanford&apos;s AI labs, Kita pulls risk-splitting credit signal from any uploaded document.
           </div>
           <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginTop: '22px' }}>
