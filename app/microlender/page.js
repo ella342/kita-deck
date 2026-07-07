@@ -3,11 +3,26 @@ import Gate from "@/components/Gate";
 import MicrolenderDeck from "@/components/microlender/MicrolenderDeck";
 import { DECKS } from "@/lib/decks";
 
+const TITLE = "Kita — Document AI for Microlending";
+const DESCRIPTION =
+  "Kita turns the documents borrowers already submit into predictive credit signal for microlenders in thin-file markets.";
+
 export const metadata = {
-  title: "Kita — Document AI for Microlending",
-  description:
-    "Kita turns the documents borrowers already submit into predictive credit signal for microlenders in thin-file markets.",
+  title: TITLE,
+  description: DESCRIPTION,
   robots: { index: false, follow: false },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+    url: "https://deck.kita.ai/microlender",
+    siteName: "Kita",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 // The microlender deck lives at /microlender. Same pattern as /community:

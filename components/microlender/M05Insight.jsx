@@ -108,7 +108,7 @@ export default function M05Insight() {
             <div style={pill({ top: '211.6px', left: '42.6px', backgroundColor: '#FFFFFF', border: '1px solid #D8D3C6', boxShadow: '#16291C1A 0px 6px 16px' })}>
               <div style={pillText('#B0492F')}>! existing debt found</div>
             </div>
-            <div style={pill({ top: '148px', right: '-148px' })}>
+            <div style={pill({ top: '208px', right: '-80px' })}>
               <div style={pillText()}>✓ stable cashflow</div>
             </div>
           </div>
