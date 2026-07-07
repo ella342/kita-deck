@@ -34,7 +34,7 @@ export default function M05Insight() {
           Document uploads contain rich signals. Kita uncovers them.
         </div>
       </div>
-      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '16px', flex: 1 }}>
+      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '8px', flex: 1 }}>
         {/* Left: pipeline + signal rows + decisions bar */}
         <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, width: '760px' }}>
           <div style={{ color: '#2D6A3F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '18px', fontWeight: 800, letterSpacing: '0.14em', lineHeight: '24px', textTransform: 'uppercase' }}>
@@ -108,9 +108,9 @@ export default function M05Insight() {
             <div style={pill({ top: '211.6px', left: '42.6px', backgroundColor: '#FFFFFF', border: '1px solid #D8D3C6', boxShadow: '#16291C1A 0px 6px 16px' })}>
               <div style={pillText('#B0492F')}>! existing debt found</div>
             </div>
-          </div>
-          <div style={pill({ top: '337.5px', left: '246px' })}>
-            <div style={pillText()}>✓ stable cashflow</div>
+            <div style={pill({ bottom: '-13px', right: '-28px' })}>
+              <div style={pillText()}>✓ stable cashflow</div>
+            </div>
           </div>
           {/* WhatsApp photo card */}
           <div style={{ position: 'absolute', top: 0, left: 0, translate: '105.7px 392.4px', rotate: '-1.5deg', transformOrigin: 'top left', backgroundColor: '#FFFFFF', border: '1px solid #00000014', borderRadius: '14px', boxShadow: '#16291C24 0px 12px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '9px', height: '136px', paddingBlock: '16px', paddingInline: '18px', width: '284px' }}>
@@ -124,9 +124,9 @@ export default function M05Insight() {
               <div style={{ backgroundColor: '#CCD2CB', borderRadius: '5px', filter: 'blur(2.5px)', height: '9px', width: '70%' }} />
               <div style={{ backgroundColor: '#D8DCD6', borderRadius: '5px', filter: 'blur(3.5px)', height: '9px', width: '88%' }} />
             </div>
-          </div>
-          <div style={pill({ top: '473.5px', left: '313px' })}>
-            <div style={pillText()}>✓ still parsed</div>
+            <div style={pill({ bottom: '-13px', right: '-26px' })}>
+              <div style={pillText()}>✓ still parsed</div>
+            </div>
           </div>
         </div>
       </div>

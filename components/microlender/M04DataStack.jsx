@@ -43,13 +43,12 @@ export default function M04DataStack() {
         <Row title="Credit bureaus" what="Formal repayment history, where it exists" lim="Thin or empty files for first-time and informal borrowers" />
         <Row title="Device & behavioral" what="App and device signals" lim="Useful for identity, fraud, and behavioral-risk signals, but an indirect view of income and cash-flow capacity." />
         <Row title="Transactions & partners" what="E-wallet and purchase history through partners" lim="Partner-dependent access; a coarse view of repayment capacity" />
-        <div style={{ alignItems: 'flex-start', backgroundColor: '#2E6A3F', borderRadius: '14px', boxSizing: 'border-box', display: 'flex', gap: '32px', marginTop: '16px', paddingBlock: '22px', paddingInline: '35px 24px' }}>
-          <div style={{ ...nameCell, width: '256px' }}>
-            <div style={dot} />
-            <div style={name('#FFFFFF')}>Borrower documents</div>
+        <div style={{ alignItems: 'flex-start', backgroundColor: '#2E6A3F', borderRadius: '14px', boxSizing: 'border-box', display: 'flex', gap: '40px', marginTop: '16px', paddingBlock: '22px', paddingInline: '17px 0px' }}>
+          <div style={{ ...name('#FFFFFF'), boxSizing: 'border-box', flexShrink: 0, width: '256px' }}>Borrower documents</div>
+          <div style={{ boxSizing: 'border-box', color: '#D8E4DC', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '17px', lineHeight: '150%', width: '400px' }}>
+            IDs, payslips, and bank statements
           </div>
-          <div style={{ ...limit('#D8E4DC'), flex: 1 }}>IDs, payslips, and bank statements</div>
-          <div style={{ boxSizing: 'border-box', color: '#FFFFFF', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '17px', fontWeight: 600, lineHeight: '150%', width: '459px' }}>
+          <div style={{ boxSizing: 'border-box', color: '#FFFFFF', flex: 1, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '17px', fontWeight: 600, lineHeight: '150%' }}>
             Collected at application{'  '}— the layer Kita unlocks
           </div>
         </div>

@@ -15,14 +15,14 @@ export default function M03Problem() {
       <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', marginTop: '14px', maxWidth: '1240px' }}>
         The credit gap is massive.<br />Underwriting is the bottleneck.
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '56px', height: '498px', marginTop: '28px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '56px', height: '460px', marginTop: '28px' }}>
         {/* The opportunity */}
-        <div style={{ backgroundColor: '#EDEAE0', borderRadius: '20px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', height: '530px', paddingBlock: '40px', paddingInline: '44px' }}>
+        <div style={{ backgroundColor: '#EDEAE0', borderRadius: '20px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', height: '460px', paddingBlock: '32px', paddingInline: '44px' }}>
           <div style={monoLabel('#2D6A3F')}>The opportunity</div>
-          <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '30px', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: '122%', marginTop: '18px', maxWidth: '560px' }}>
+          <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '30px', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: '122%', marginTop: '14px', maxWidth: '560px' }}>
             A massive gap between credit demand and available supply in emerging markets.
           </div>
-          <div style={{ borderTop: '1px solid #D8D3C6', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto', paddingTop: '28px' }}>
+          <div style={{ borderTop: '1px solid #D8D3C6', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '8px', marginTop: 'auto', paddingTop: '20px' }}>
             <div style={statLabel('#2D6A3F')}>Financially excluded</div>
             <div style={statNum('#2D6A3F')}>1.3B</div>
             <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', lineHeight: '140%' }}>
@@ -31,19 +31,19 @@ export default function M03Problem() {
           </div>
         </div>
         {/* The bottleneck */}
-        <div style={{ backgroundColor: '#16291C', borderRadius: '20px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', height: '530px', paddingBlock: '40px', paddingInline: '44px' }}>
+        <div style={{ backgroundColor: '#16291C', borderRadius: '20px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', height: '460px', paddingBlock: '32px', paddingInline: '44px' }}>
           <div style={monoLabel('#4CAF72')}>The bottleneck</div>
-          <div style={{ color: '#FFFFFF', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '30px', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: '122%', marginTop: '18px' }}>
+          <div style={{ color: '#FFFFFF', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '30px', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: '122%', marginTop: '14px' }}>
             Demand isn&apos;t the problem.<br />The data to underwrite it is.
           </div>
-          <div style={{ borderTop: '1px solid #2E5038', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '28px', paddingTop: '28px' }}>
+          <div style={{ borderTop: '1px solid #2E5038', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '18px', paddingTop: '20px' }}>
             <div style={statLabel('#4CAF72')}>The unmet demand</div>
             <div style={statNum('#4CAF72')}>$5.7T</div>
             <div style={{ color: '#A9C4B1', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', lineHeight: '140%' }}>
               in estimated unmet demand for credit.
             </div>
           </div>
-          <div style={{ color: '#A9C4B1', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', lineHeight: '150%', marginTop: '20px' }}>
+          <div style={{ color: '#A9C4B1', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', lineHeight: '150%', marginTop: '14px' }}>
             The constraint: approving more creditworthy borrowers from the messy documents and alternative data thin-file customers have.
           </div>
         </div>

@@ -21,9 +21,14 @@ const CHARTS = [
 ];
 
 function DecileCard({ c }) {
-  const points = c.y.map((y, i) => `${X[i]},${y}`).join(" ");
+  // Vertically compressed chart: source coordinates span y 23..131 in a
+  // 170-tall viewBox; squeeze them into a 126-tall one.
+  const sy = (v) => Math.round(((v - 23) * 0.78 + 14) * 10) / 10;
+  const points = c.y.map((y, i) => `${X[i]},${sy(y)}`).join(" ");
+  const firstLabelY = Math.max(10, sy(c.y[0]) - 11);
+  const lastLabelY = sy(c.y[c.y.length - 1]) + 18;
   return (
-    <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #00000014', borderRadius: '14px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', gap: '2px', height: '237px', paddingBlock: '15px 18px', paddingInline: '20px' }}>
+    <div style={{ backgroundColor: '#FFFFFF', border: '1px solid #00000014', borderRadius: '14px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', gap: '2px', height: '200px', paddingBlock: '15px 18px', paddingInline: '20px' }}>
       <div style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
         <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '17px', fontWeight: 700, lineHeight: '22px' }}>{c.title}</div>
         {c.badge && (
@@ -33,13 +38,13 @@ function DecileCard({ c }) {
         )}
       </div>
       <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '12.5px', lineHeight: '16px' }}>linear R² {c.r2}</div>
-      <svg width="372" height="170" viewBox="0 0 380 170" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-        <line x1="30" y1={c.mean} x2="370" y2={c.mean} stroke="#B0492F" strokeWidth="1.2" strokeDasharray="4 4" style={{ opacity: 0.55 }} />
+      <svg width="372" height="126" viewBox="0 0 380 126" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+        <line x1="30" y1={sy(c.mean)} x2="370" y2={sy(c.mean)} stroke="#B0492F" strokeWidth="1.2" strokeDasharray="4 4" style={{ opacity: 0.55 }} />
         <polyline points={points} fill="none" stroke="#2D6A3F" strokeWidth="2.6" />
-        {c.y.map((y, i) => <circle key={i} cx={X[i]} cy={y} r="4" fill="#2D6A3F" />)}
-        <text x={c.first.x} y={c.first.y} fontFamily="Geist" fontWeight="700" fontSize="13" fill="#B0492F">{c.first.text}</text>
-        <text x="370" y={c.last.y} fontFamily="Geist" fontWeight="700" fontSize="13" textAnchor="end" fill="#2D6A3F">{c.last.text}</text>
-        <text x="200" y="166" fontFamily="Geist" fontSize="11" textAnchor="middle" fill="#8A968D">riskiest → safest score decile</text>
+        {c.y.map((y, i) => <circle key={i} cx={X[i]} cy={sy(y)} r="4" fill="#2D6A3F" />)}
+        <text x={c.first.x} y={firstLabelY} fontFamily="Geist" fontWeight="700" fontSize="13" fill="#B0492F">{c.first.text}</text>
+        <text x="370" y={lastLabelY} fontFamily="Geist" fontWeight="700" fontSize="13" textAnchor="end" fill="#2D6A3F">{c.last.text}</text>
+        <text x="200" y="122" fontFamily="Geist" fontSize="11" textAnchor="middle" fill="#8A968D">riskiest → safest score decile</text>
       </svg>
     </div>
   );
