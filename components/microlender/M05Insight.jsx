@@ -36,7 +36,7 @@ export default function M05Insight() {
       </div>
       <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '8px', flex: 1 }}>
         {/* Left: pipeline + signal rows + decisions bar */}
-        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, marginTop: '22px', width: '760px' }}>
+        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, marginTop: '34px', width: '760px' }}>
           <div style={{ color: '#2D6A3F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '18px', fontWeight: 800, letterSpacing: '0.14em', lineHeight: '24px', textTransform: 'uppercase' }}>
             Documents → Signals → Decisions
           </div>
@@ -108,7 +108,7 @@ export default function M05Insight() {
             <div style={pill({ top: '211.6px', left: '42.6px', backgroundColor: '#FFFFFF', border: '1px solid #D8D3C6', boxShadow: '#16291C1A 0px 6px 16px' })}>
               <div style={pillText('#B0492F')}>! existing debt found</div>
             </div>
-            <div style={pill({ top: '208px', right: '-80px' })}>
+            <div style={pill({ top: '208px', right: '-96px' })}>
               <div style={pillText()}>✓ stable cashflow</div>
             </div>
           </div>
