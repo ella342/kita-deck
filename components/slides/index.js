@@ -16,4 +16,5 @@ export { default as Slide14ComparedToIndustry } from './Slide14ComparedToIndustr
 export { default as Slide15CustomerOutcomes } from './Slide15CustomerOutcomes';
 export { default as Slide16Integration } from './Slide16Integration';
 export { default as Slide17LiveDemo } from './Slide17LiveDemo';
+export { default as Slide19GoTyme } from './Slide19GoTyme';
 export { default as Slide18CTA } from './Slide18CTA';
