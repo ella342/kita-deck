@@ -28,10 +28,11 @@ export const metadata = {
 // The microlender deck lives at /microlender. Same pattern as /community:
 // show the password gate until unlocked, then render the slides at the
 // same URL. Has its own password + cookie (see lib/decks.js).
-export default async function Microlender() {
+export default async function Microlender({ searchParams }) {
   const store = await cookies();
   const { cookie, token } = DECKS.microlender;
   const authed = store.get(cookie)?.value === token;
+  const params = await searchParams;
   return authed ? (
     <MicrolenderDeck />
   ) : (
@@ -39,6 +40,7 @@ export default async function Microlender() {
       deck="microlender"
       blurb="Enter the password to view the Kita deck for microlenders."
       footerLabel="Kita · Microlending"
+      error={params?.error ? "Incorrect password. Try again." : ""}
     />
   );
 }

@@ -1,16 +1,16 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { Children, useState, useEffect, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { SLIDES } from "@/components/deck/Slides";
 import CustomCursor from "@/components/CustomCursor";
 
 const W = 1440;
 const H = 900;
 
-// Shared deck player. Defaults to the community slides; other decks pass
-// their own slide list.
-export default function Deck({ slides = SLIDES }) {
+// Shared deck player. Slide content is passed as server-rendered children so
+// protected deck copy is not compiled into the public client bundle.
+export default function Deck({ slides, children }) {
+  const renderedSlides = Children.toArray(children);
   const TOTAL = slides.length;
   const [current, setCurrent] = useState(0);
   const [scale, setScale] = useState(1);
@@ -64,7 +64,6 @@ export default function Deck({ slides = SLIDES }) {
   };
 
   const slide = slides[current];
-  const Slide = slide.Component;
   const progress = (current / (TOTAL - 1)) * 100;
   const barTop = "calc(100% - 7px)";
 
@@ -111,14 +110,14 @@ export default function Deck({ slides = SLIDES }) {
           style={{ position: "absolute", inset: 0 }}
         >
           {slide.fullBleed ? (
-            <Slide />
+            renderedSlides[current]
           ) : (
             <div style={{
               position: "absolute", top: "50%", left: "50%", width: W, height: H,
               transform: `translate(-50%, -50%) scale(${scale})`, transformOrigin: "center",
             }}>
               <div className="deck-stage deck-anim is-in" style={{ width: W, height: H }}>
-                <Slide />
+                {renderedSlides[current]}
               </div>
             </div>
           )}
