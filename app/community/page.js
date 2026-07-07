@@ -6,6 +6,6 @@ import Deck from "@/components/Deck";
 // then render the slides at the same URL — no separate /deck path.
 export default async function Community() {
   const store = await cookies();
-  const authed = store.get("kita_access")?.value === "2";
+  const authed = store.get("kita_access")?.value === "3";
   return authed ? <Deck /> : <Gate />;
 }

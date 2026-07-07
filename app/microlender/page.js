@@ -14,7 +14,7 @@ export const metadata = {
 // same URL. Shares the /api/unlock password + cookie with the community deck.
 export default async function Microlender() {
   const store = await cookies();
-  const authed = store.get("kita_access")?.value === "2";
+  const authed = store.get("kita_access")?.value === "3";
   return authed ? (
     <MicrolenderDeck />
   ) : (

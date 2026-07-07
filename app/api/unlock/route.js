@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const PASSWORD = "community";
+const PASSWORD = "signal";
 
 export async function POST(request) {
   let password = "";
@@ -17,7 +17,7 @@ export async function POST(request) {
 
   const res = NextResponse.json({ ok: true });
   // Bump this token to invalidate all existing sessions (logs everyone out).
-  res.cookies.set("kita_access", "2", {
+  res.cookies.set("kita_access", "3", {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",
