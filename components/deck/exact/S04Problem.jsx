@@ -10,7 +10,7 @@ function PCard({ n, title, body, fixed }) {
 
 export default function S04Problem() {
   return (
-    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
+    <div style={{ backgroundColor: '#F5F2EB', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
       <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '48px' }}>
         <div style={{ backgroundImage: 'url(https://app.paper.design/file-assets/01KRW9RKQ8CMS38RV87YYFQ9EV/01KRWC6EJA4G1AXHVAH2Z43R43.png)', backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
         <div style={{ color: '#8A9E8F', fontFamily: '"Geist Mono", system-ui, sans-serif', fontSize: '14px', fontWeight: 600, letterSpacing: '0.14em', lineHeight: '18px', opacity: '0.7', textTransform: 'uppercase' }}>Underwriting bottlenecks</div>
@@ -23,16 +23,16 @@ export default function S04Problem() {
           </div>
           <div style={{ color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%', maxWidth: '760px' }}>Good borrowers fall through the cracks.</div>
         </div>
-        <div style={{ color: '#5A7060', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right', width: '459px' }}>Teams spend hours verifying income and reviewing paperwork, and good applicants are lost along the way.</div>
+        <div style={{ color: '#5A7060', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right', width: '459px' }}>Lean teams stitch together manual tools and chase documents for weeks. Files pile up, and the community you exist to serve waits, or gets lost along the way.</div>
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '22px', paddingBottom: '28px', paddingInline: '56px' }}>
         <div style={{ display: 'flex', gap: '22px' }}>
-          <PCard n="01" fixed title="Income verification drives borrowers away." body="It's the biggest friction point in the file — and what borrowers self-report is often inaccurate." />
-          <PCard n="02" title="Manual review doesn't scale." body="Officers review each file by hand. It's slow, and every reviewer does it differently." />
+          <PCard n="01" fixed title="Document collection drags on for weeks." body="Files arrive piecemeal over email, Dropbox, even paper, and chasing them can take 30 days to a year." />
+          <PCard n="02" title="A patchwork of disconnected tools." body="Spread financials in one system, underwrite in another, email PDFs to committee. Nothing talks to each other." />
         </div>
         <div style={{ display: 'flex', gap: '22px' }}>
-          <PCard n="03" fixed title="Fraud is getting harder to catch." body="Synthetic identities and AI-generated documents slip past manual checks." />
-          <PCard n="04" title="Creditworthy borrowers get declined." body="Underbanked and nontraditional-income applicants are hard to assess, so good borrowers get turned away." />
+          <PCard n="03" fixed title="Two underwriters, endless files." body="Manual review doesn't scale. A small team can only get through so many files by hand." />
+          <PCard n="04" title="Mission-fit borrowers get declined." body="Thin-file and nontraditional-income applicants are hard to assess by hand, so the community you exist to serve gets turned away." />
         </div>
       </div>
     </div>

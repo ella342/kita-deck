@@ -2,14 +2,15 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { SLIDES } from "@/components/deck/Slides";
 import CustomCursor from "@/components/CustomCursor";
 
-// Shared deck player: 1440x900 scaled stage, keyboard/wheel/touch nav,
-// progress bar, dots, counter, green base bar. Pass the deck's slide list.
 const W = 1440;
 const H = 900;
 
-export default function DeckShell({ slides }) {
+// Shared deck player. Defaults to the community slides; other decks pass
+// their own slide list.
+export default function Deck({ slides = SLIDES }) {
   const TOTAL = slides.length;
   const [current, setCurrent] = useState(0);
   const [scale, setScale] = useState(1);
@@ -65,7 +66,7 @@ export default function DeckShell({ slides }) {
   const slide = slides[current];
   const Slide = slide.Component;
   const progress = (current / (TOTAL - 1)) * 100;
-  const barTop = slide.fullBleed ? "calc(100% - 7px)" : `calc(50% + ${(H * scale) / 2 - 7}px)`;
+  const barTop = "calc(100% - 7px)";
 
   const arrow = (onClick, side) => (
     <button

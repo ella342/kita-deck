@@ -1,11 +1,6 @@
-import Gate from "@/components/Gate";
+import { redirect } from "next/navigation";
 
-export default function CommunityGate() {
-  return (
-    <Gate
-      redirectTo="/deck"
-      blurb="Enter your work email to view the Kita community-lending deck."
-      footerLabel="Kita · Community Lending"
-    />
-  );
+// The deck lives at /community. Send the bare domain there.
+export default function Home() {
+  redirect("/community");
 }

@@ -4,6 +4,7 @@ import S02About from "./exact/S02About";
 import S03BackedBy from "./exact/S03BackedBy";
 import S04Problem from "./exact/S04Problem";
 import S05Stack from "./exact/S05Stack";
+import S13Intake from "./exact/S13Intake";
 import S06CreditOfficer from "./exact/S06CreditOfficer";
 import S08ReadAnything from "./exact/S08ReadAnything";
 import S07Underwriter from "./exact/S07Underwriter";
@@ -18,6 +19,7 @@ export const SLIDES = [
   { id: "backed-by", Component: S03BackedBy },
   { id: "problem", Component: S04Problem },
   { id: "stack", Component: S05Stack },
+  { id: "intake", Component: S13Intake },
   { id: "credit-officer", Component: S06CreditOfficer },
   { id: "read-anything", Component: S08ReadAnything },
   { id: "underwriter", Component: S07Underwriter },

@@ -29,12 +29,13 @@ export default function S01Title() {
           style={{ backgroundImage: `url(${LOGO})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "left center", width: "clamp(112px, 10vw, 148px)", height: "clamp(75px, 6.8vw, 99px)", flexShrink: 0 }} />
         <motion.div variants={stagger(0.12, 0)} style={{ display: "flex", flexDirection: "column", gap: "clamp(20px, 2vw, 32px)", maxWidth: "min(960px, 78%)" }}>
           <motion.h1 variants={item}
-            style={{ margin: 0, color: "#16291C", fontWeight: 700, fontSize: "clamp(38px, 6.6vw, 96px)", lineHeight: 1.0, letterSpacing: "-0.03em" }}>
-            AI-Native Credit Assessment<br />for Community Lenders.
+            style={{ margin: 0, fontWeight: 700, fontSize: "clamp(38px, 6.6vw, 96px)", lineHeight: 1.0, letterSpacing: "-0.03em" }}>
+            <span style={{ color: "#16291C" }}>Superpower your underwriters with AI.</span><br />
+            <span style={{ color: "#2D6A3F" }}>Serve more of your community.</span>
           </motion.h1>
           <motion.p variants={item}
             style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px, 1.5vw, 22px)", lineHeight: 1.45, letterSpacing: "-0.005em", maxWidth: "820px" }}>
-            Kita reads your borrowers&apos; documents, checks for fraud, and drafts the credit memo so your team decides in minutes, not days. Built for CDFIs, credit unions, and community banks.
+            Kita is responsible AI for underwriting, built for CDFIs, community lenders, and credit unions. Every recommendation cited and auditable, every decision still yours, so a small team can say yes to more of your community.
           </motion.p>
         </motion.div>
         <motion.div variants={item}

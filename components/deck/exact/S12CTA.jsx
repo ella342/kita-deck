@@ -35,15 +35,33 @@ export default function S12CTA() {
             <span style={{ color: "#52B07A", fontSize: "clamp(13px,1.1vw,17px)", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase" }}>get started</span>
           </motion.div>
           <motion.h1 variants={item} style={{ margin: 0, fontWeight: 700, fontSize: "clamp(40px, 6.8vw, 96px)", lineHeight: 1.02, letterSpacing: "-0.03em" }}>
-            <span style={{ color: "#16291C" }}>Kita is AI for underwriting.</span><br />
+            <span style={{ color: "#16291C" }}>Kita is AI for your underwriters.</span><br />
             <span style={{ color: "#2D6A3F" }}>Ready when you are.</span>
           </motion.h1>
           <motion.p variants={item} style={{ margin: "clamp(10px,1vw,14px) 0 0", color: "#5A7060", fontSize: "clamp(15px, 1.5vw, 22px)", lineHeight: 1.45, maxWidth: "820px" }}>
             We&apos;ll walk your team through Kita&apos;s platform and get you set up with bespoke onboarding and 24/7 support.
           </motion.p>
-          <motion.div variants={item} style={{ display: "flex", flexDirection: "column", gap: "clamp(8px,0.8vw,14px)", marginTop: "clamp(16px,1.6vw,28px)" }}>
-            <span style={{ color: "#8A9E8F", fontFamily: '"Geist Mono", monospace', fontSize: "clamp(11px,1vw,13px)", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase" }}>book a demo →</span>
-            <a href="mailto:founders@kita.ai" style={{ color: "#2D6A3F", fontWeight: 800, fontSize: "clamp(20px,2.4vw,30px)", letterSpacing: "-0.02em", textDecoration: "none" }}>founders@kita.ai</a>
+          <motion.div variants={item} style={{ marginTop: "clamp(16px,1.6vw,28px)" }}>
+            <a
+              href="https://cal.com/carmel-limcaoco/meet-with-kita-carmel-limcaoco"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "10px",
+                background: "#2D6A3F",
+                color: "#FFFFFF",
+                fontWeight: 700,
+                fontSize: "clamp(16px,1.6vw,22px)",
+                letterSpacing: "-0.01em",
+                padding: "clamp(13px,1.2vw,18px) clamp(22px,2vw,32px)",
+                borderRadius: "12px",
+                textDecoration: "none",
+              }}
+            >
+              Book a call <span aria-hidden style={{ fontSize: "1.1em" }}>→</span>
+            </a>
           </motion.div>
         </motion.div>
 
