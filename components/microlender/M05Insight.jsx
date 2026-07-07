@@ -36,7 +36,7 @@ export default function M05Insight() {
       </div>
       <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '8px', flex: 1 }}>
         {/* Left: pipeline + signal rows + decisions bar */}
-        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, width: '760px' }}>
+        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, marginTop: '22px', width: '760px' }}>
           <div style={{ color: '#2D6A3F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '18px', fontWeight: 800, letterSpacing: '0.14em', lineHeight: '24px', textTransform: 'uppercase' }}>
             Documents → Signals → Decisions
           </div>
@@ -55,7 +55,7 @@ export default function M05Insight() {
           </div>
         </div>
         {/* Right: document mockups */}
-        <div style={{ boxSizing: 'border-box', flexShrink: 0, height: '530px', position: 'relative', width: '480px' }}>
+        <div style={{ boxSizing: 'border-box', flexShrink: 0, height: '530px', marginTop: '-40px', position: 'relative', width: '480px' }}>
           {/* Payslip card */}
           <div style={{ position: 'absolute', top: 0, left: 0, translate: '210px 36px', rotate: '2.5deg', transformOrigin: 'top left', backgroundColor: '#FFFFFF', border: '1px solid #00000014', borderRadius: '14px', boxShadow: '#16291C1F 0px 10px 28px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px', height: '214px', paddingBlock: '18px', paddingInline: '20px', width: '250px' }}>
             <div style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>

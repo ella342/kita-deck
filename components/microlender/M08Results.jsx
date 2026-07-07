@@ -65,7 +65,7 @@ export default function M08Results() {
           Kita predicted repayment more accurately than credit score.
         </div>
       </div>
-      <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '20px', paddingInline: '64px', paddingTop: '24px' }}>
+      <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '34px', paddingInline: '64px', paddingTop: '24px' }}>
         <div style={{ boxSizing: 'border-box', display: 'flex', gap: '24px', width: '100%' }}>
           <div style={{ backgroundColor: '#EDEAE0', border: '1px solid #00000014', borderRadius: '16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, gap: '8px', height: '208px', paddingBlock: '21px 24px', paddingInline: '28px', width: '620px' }}>
             <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '19px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: '128%' }}>With Kita:</div>
