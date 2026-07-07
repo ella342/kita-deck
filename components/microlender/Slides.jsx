@@ -10,7 +10,7 @@ import M07Backtest from "./M07Backtest";
 import M08Results from "./M08Results";
 import M09WhyDocuments from "./M09WhyDocuments";
 import M10NextSteps from "./M10NextSteps";
-import M11Close from "./M11Close";
+import M11CTA from "./M11CTA";
 
 export const MICROLENDER_SLIDES = [
   { id: "title", Component: M01Title, fullBleed: true },
@@ -23,5 +23,5 @@ export const MICROLENDER_SLIDES = [
   { id: "results", Component: M08Results },
   { id: "why-documents", Component: M09WhyDocuments },
   { id: "next-steps", Component: M10NextSteps },
-  { id: "close", Component: M11Close, fullBleed: true },
+  { id: "cta", Component: M11CTA, fullBleed: true },
 ];
