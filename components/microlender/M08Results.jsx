@@ -48,19 +48,19 @@ function DecileCard({ c }) {
 export default function M08Results() {
   return (
     <div style={{ backgroundColor: '#F4EFE3', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased' }}>
-      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '36px' }}>
-        <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: 'left center', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', flexShrink: 0, height: '87px', width: '130px' }} />
+      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '48px' }}>
+        <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px', paddingInline: '68px 64px', paddingTop: '10px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px', paddingInline: '64px', paddingTop: '28px' }}>
         <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px' }}>
-          <div style={{ color: '#4CAF72', fontFamily: 'system-ui, sans-serif', fontSize: '13px', lineHeight: '16px' }}>●</div>
-          <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>results</div>
+          <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
+          <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '15px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>results</div>
         </div>
         <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', maxWidth: '1100px' }}>
           Kita predicted repayment more accurately than credit score.
         </div>
       </div>
-      <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '24px', paddingInline: '64px', paddingTop: '8px' }}>
+      <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '20px', paddingInline: '64px', paddingTop: '24px' }}>
         <div style={{ boxSizing: 'border-box', display: 'flex', gap: '24px', width: '100%' }}>
           <div style={{ backgroundColor: '#EDEAE0', border: '1px solid #00000014', borderRadius: '16px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', gap: '8px', height: '225px', paddingBlock: '21px 24px', paddingInline: '28px' }}>
             <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '19px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: '128%' }}>With Kita:</div>

@@ -29,9 +29,9 @@ export default function M01Title() {
           style={{ backgroundImage: `url(${LOGO})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "left center", width: "clamp(112px, 10vw, 148px)", height: "clamp(75px, 6.8vw, 99px)", flexShrink: 0 }} />
         <motion.div variants={stagger(0.12, 0)} style={{ display: "flex", flexDirection: "column", gap: "clamp(20px, 2vw, 30px)", maxWidth: "min(1180px, 88%)" }}>
           <motion.h1 variants={item}
-            style={{ margin: 0, color: "#16291C", fontWeight: 700, fontSize: "clamp(36px, 5.2vw, 75px)", lineHeight: 1.0, letterSpacing: "-0.03em" }}>
+            style={{ margin: 0, color: "#16291C", fontWeight: 700, fontSize: "clamp(38px, 5.9vw, 84px)", lineHeight: 1.0, letterSpacing: "-0.03em" }}>
             Turn documents into predictive credit signal.{" "}
-            <span style={{ color: "#2D6A3F", display: "block" }}>Document AI for lending in thin-file markets.</span>
+            <span style={{ color: "#2D6A3F", display: "block" }}>Document AI for lending in<br />thin-file markets.</span>
           </motion.h1>
           <motion.p variants={item}
             style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px, 1.6vw, 23px)", lineHeight: 1.5, maxWidth: "880px" }}>

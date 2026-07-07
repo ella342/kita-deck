@@ -13,7 +13,7 @@ export default function M02BackedBy() {
         <div style={IMG(B + '1FGV0Y1WWTWNJ0FFJSZ15Z5QEW.png', '148px', '99px', { backgroundPosition: 'left center' })} />
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px', paddingInline: '70px 64px', paddingTop: '18px', width: '1440px' }}>
-        <div style={{ boxSizing: 'border-box', color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '43px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%' }}>
+        <div style={{ boxSizing: 'border-box', color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '46px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%' }}>
           Vision AI for microlending in emerging markets.<br />Built in Silicon Valley.
         </div>
         <div style={{ boxSizing: 'border-box', color: '#5A7A60', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', lineHeight: '150%', maxWidth: '900px' }}>

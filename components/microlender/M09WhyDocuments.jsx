@@ -26,19 +26,19 @@ function Card({ n, title, body, bullets }) {
 export default function M09WhyDocuments() {
   return (
     <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased' }}>
-      <div style={{ boxSizing: 'border-box', display: 'flex', paddingInline: '64px', paddingTop: '36px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', paddingInline: '64px', paddingTop: '48px' }}>
         <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px', paddingInline: '64px', paddingTop: '43px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px', paddingInline: '64px', paddingTop: '28px' }}>
         <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px' }}>
-          <div style={{ color: '#4CAF72', fontFamily: 'system-ui, sans-serif', fontSize: '15px', lineHeight: '16px' }}>●</div>
+          <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
           <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '15px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>why documents</div>
         </div>
-        <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '64px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', maxWidth: '1180px' }}>
+        <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', maxWidth: '1180px' }}>
           For lenders: lower risk, larger book.
         </div>
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '28px', height: '481px', marginTop: '56px', paddingInline: '64px', width: '100%' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '28px', height: '481px', marginTop: '48px', paddingInline: '64px', width: '100%' }}>
         <Card
           n="01"
           title="Sharper risk ranking"

@@ -17,13 +17,13 @@ export default function M10NextSteps() {
       <div style={{ boxSizing: 'border-box', display: 'flex', paddingInline: '64px', paddingTop: '48px', position: 'relative' }}>
         <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', gap: '30px', justifyContent: 'center', paddingInline: '89px 48px', position: 'relative' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', gap: '36px', paddingInline: '64px', paddingTop: '28px', position: 'relative' }}>
         <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px' }}>
           <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px' }}>
-            <div style={{ color: '#4CAF72', fontFamily: 'system-ui, sans-serif', fontSize: '13px', lineHeight: '16px' }}>●</div>
-            <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>Proof of concept</div>
+            <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
+            <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '15px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>Proof of concept</div>
           </div>
-          <div style={{ color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '64px', fontWeight: 900, letterSpacing: '-0.03em', lineHeight: '104%' }}>
+          <div style={{ color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%' }}>
             See it on your loan book.
           </div>
         </div>

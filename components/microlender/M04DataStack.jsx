@@ -22,13 +22,13 @@ function Row({ title, what, lim }) {
 
 export default function M04DataStack() {
   return (
-    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', paddingInline: '64px', paddingTop: '36px', WebkitFontSmoothing: 'antialiased' }}>
+    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', paddingInline: '64px', paddingTop: '48px', WebkitFontSmoothing: 'antialiased' }}>
       <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
-      <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px', marginTop: '24px' }}>
+      <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px', marginTop: '28px' }}>
         <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
         <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '15px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>The data landscape</div>
       </div>
-      <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '65px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%', marginTop: '14px' }}>
+      <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', marginTop: '14px' }}>
         The global alternative data stack
       </div>
       <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '21px', lineHeight: '155%', marginTop: '18px', maxWidth: '1050px' }}>

@@ -9,19 +9,19 @@ const dpdRow = (color) => ({ color, fontFamily: '"JetBrains Mono", system-ui, sa
 export default function M07Backtest() {
   return (
     <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', WebkitFontSmoothing: 'antialiased' }}>
-      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '36px' }}>
+      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '48px' }}>
         <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px', paddingInline: '64px', paddingTop: '31px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px', paddingInline: '64px', paddingTop: '28px' }}>
         <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px' }}>
-          <div style={{ color: '#4CAF72', fontFamily: 'system-ui, sans-serif', fontSize: '15px', lineHeight: '16px' }}>●</div>
+          <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
           <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '15px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>case study</div>
         </div>
-        <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '56px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%', maxWidth: '1220px' }}>
+        <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', maxWidth: '1220px' }}>
           Kita backtested 8,000 real documents<br />from microlenders around the world
         </div>
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '14px', height: '396px', marginTop: '40px', paddingInline: '64px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '14px', height: '396px', marginTop: '32px', paddingInline: '64px' }}>
         {/* 01 Documents */}
         <div style={lightCard}>
           <div style={cardLabel('#2D6A3F')}>01 · Documents</div>
@@ -112,7 +112,7 @@ export default function M07Backtest() {
           <div style={cardFoot('#A9C4B1')}>No proxies, no labels we invented — the lender&apos;s real repayment record</div>
         </div>
       </div>
-      <div style={{ alignItems: 'baseline', borderTop: '1px solid #D8D3C6', boxSizing: 'border-box', display: 'flex', gap: '40px', justifyContent: 'space-between', marginInline: '64px', marginTop: '36px', paddingTop: '24px' }}>
+      <div style={{ alignItems: 'baseline', borderTop: '1px solid #D8D3C6', boxSizing: 'border-box', display: 'flex', gap: '40px', justifyContent: 'space-between', marginInline: '64px', marginTop: '30px', paddingTop: '24px' }}>
         <div style={{ color: '#4A5247', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', fontWeight: 500, lineHeight: '140%', maxWidth: '980px' }}>
           Kita uses vision language models to pull credit signal from any input document, regardless of format.
         </div>

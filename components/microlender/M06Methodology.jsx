@@ -44,14 +44,14 @@ export default function M06Methodology() {
       <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', justifyContent: 'space-between', paddingInline: '64px', paddingTop: '48px' }}>
         <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
       </div>
-      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '98px', paddingInline: '64px', paddingTop: '31px' }}>
+      <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '84px', paddingInline: '64px', paddingTop: '28px' }}>
         {/* Left column */}
         <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, width: '656px' }}>
           <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px' }}>
-            <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '6px', width: '6px' }} />
-            <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '13px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>Methodology</div>
+            <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
+            <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '15px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>Methodology</div>
           </div>
-          <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', marginTop: '10px' }}>
+          <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', marginTop: '14px' }}>
             From messy documents to measurably predictive risk signals
           </div>
           <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '22px', lineHeight: '150%', marginTop: '28px', marginBottom: '28px' }}>
@@ -63,7 +63,7 @@ export default function M06Methodology() {
           <Spec label="Resolution" body="150 dpi to 4K. Auto-upscale on degraded inputs." />
         </div>
         {/* Right: VLM extraction mock */}
-        <div style={{ boxSizing: 'border-box', flexShrink: 0, height: '555px', position: 'relative', width: '520px' }}>
+        <div style={{ boxSizing: 'border-box', flexShrink: 0, height: '555px', position: 'relative', width: '545px' }}>
           {/* Document */}
           <div style={{ position: 'absolute', top: '16px', left: '18px', backgroundColor: '#FFFFFF', borderRadius: '10px', boxShadow: '#0000001A 0px 6px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px', height: '512px', justifyContent: 'space-between', overflow: 'clip', paddingBlock: '24px', paddingInline: '22px', width: '384px' }}>
             <div style={{ alignItems: 'flex-start', display: 'flex', justifyContent: 'space-between' }}>
@@ -129,7 +129,7 @@ export default function M06Methodology() {
         </div>
       </div>
       {/* Stat chips */}
-      <div style={{ position: 'absolute', top: '738px', left: '808px', alignItems: 'flex-end', display: 'flex', gap: '19px', justifyContent: 'flex-end' }}>
+      <div style={{ position: 'absolute', top: '762px', left: '808px', alignItems: 'flex-end', display: 'flex', gap: '19px', justifyContent: 'flex-end' }}>
         <div style={{ alignItems: 'center', backgroundColor: '#EDEAE0', borderRadius: '10px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '3px', height: '78px', justifyContent: 'center', paddingBlock: '12px', paddingInline: '20px', width: '150px' }}>
         <div style={{ alignSelf: 'stretch', color: '#2D6A3F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '34px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '100%' }}>50+</div>
           <div style={{ alignSelf: 'stretch', color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '14px', lineHeight: '130%' }}>document types</div>

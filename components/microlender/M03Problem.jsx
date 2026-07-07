@@ -6,16 +6,16 @@ const statNum = (color) => ({ color, fontFamily: '"Geist", system-ui, sans-serif
 
 export default function M03Problem() {
   return (
-    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', paddingInline: '64px', paddingTop: '36px', WebkitFontSmoothing: 'antialiased' }}>
+    <div style={{ backgroundColor: '#F5F2EB', borderBottomColor: '#2D6A3F', borderBottomStyle: 'solid', borderBottomWidth: '7px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', width: '1440px', height: '900px', overflow: 'clip', paddingInline: '64px', paddingTop: '48px', WebkitFontSmoothing: 'antialiased' }}>
       <div style={{ backgroundImage: `url(${LOGO})`, backgroundPosition: '50%', backgroundSize: 'cover', flexShrink: 0, height: '99px', width: '148px' }} />
       <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px', marginTop: '28px' }}>
         <div style={{ backgroundColor: '#4CAF72', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
         <div style={{ color: '#4CAF72', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '15px', fontWeight: 600, letterSpacing: '0.1em', lineHeight: '16px', textTransform: 'uppercase' }}>The bottleneck</div>
       </div>
-      <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '60px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', marginTop: '14px', maxWidth: '1240px' }}>
+      <div style={{ color: '#16291C', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '104%', marginTop: '14px', maxWidth: '1240px' }}>
         The credit gap is massive.<br />Underwriting is the bottleneck.
       </div>
-      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '56px', height: '530px', marginTop: '40px' }}>
+      <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '56px', height: '520px', marginTop: '28px' }}>
         {/* The opportunity */}
         <div style={{ backgroundColor: '#EDEAE0', borderRadius: '20px', boxSizing: 'border-box', display: 'flex', flex: 1, flexDirection: 'column', height: '530px', paddingBlock: '40px', paddingInline: '44px' }}>
           <div style={monoLabel('#2D6A3F')}>The opportunity</div>
