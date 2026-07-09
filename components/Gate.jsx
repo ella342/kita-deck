@@ -1,46 +1,11 @@
-"use client";
-
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-
-// Shared password gate. Posts to /api/unlock (which sets the kita_access
-// cookie), then refreshes so the server component renders the deck at the
-// same URL. Copy is configurable per deck.
+// Shared password gate. It intentionally works without client JavaScript so
+// unauthenticated users do not need access to the slide-bearing chunks.
 export default function Gate({
   deck = "community",
   blurb = "Enter the password to view the Kita deck for community lenders.",
   footerLabel = "Kita · Community Lending",
+  error = "",
 }) {
-  const router = useRouter();
-  const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
-  const [status, setStatus] = useState("idle"); // idle | loading | error
-  const [error, setError] = useState("");
-
-  async function onSubmit(e) {
-    e.preventDefault();
-    setStatus("loading");
-    setError("");
-    try {
-      const res = await fetch("/api/unlock", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password, deck }),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) {
-        setStatus("error");
-        setError(data.error || "Incorrect password. Try again.");
-        return;
-      }
-      // Cookie is set; re-render the server component so /community now shows the deck.
-      router.refresh();
-    } catch {
-      setStatus("error");
-      setError("Network error. Please try again.");
-    }
-  }
-
   return (
     <main
       style={{
@@ -111,14 +76,14 @@ export default function Gate({
           {blurb}
         </p>
 
-        <form onSubmit={onSubmit} style={{ width: "100%", display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
+        <form action="/api/unlock" method="post" style={{ width: "100%", display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
+          <input type="hidden" name="deck" value={deck} />
           <div style={{ position: "relative", width: "100%" }}>
             <input
-              type={showPassword ? "text" : "password"}
+              type="password"
               required
               autoFocus
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              name="password"
               placeholder="Password"
               aria-label="Password"
               style={{
@@ -133,45 +98,9 @@ export default function Gate({
                 outline: "none",
               }}
             />
-            <button
-              type="button"
-              onClick={() => setShowPassword((v) => !v)}
-              aria-label={showPassword ? "Hide password" : "Show password"}
-              title={showPassword ? "Hide password" : "Show password"}
-              style={{
-                position: "absolute",
-                top: "50%",
-                right: "12px",
-                transform: "translateY(-50%)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "6px",
-                background: "transparent",
-                border: "none",
-                cursor: "pointer",
-                color: "#8A9E8F",
-                lineHeight: 0,
-              }}
-            >
-              {showPassword ? (
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
-                  <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68" />
-                  <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61" />
-                  <line x1="2" y1="2" x2="22" y2="22" />
-                </svg>
-              ) : (
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-              )}
-            </button>
           </div>
           <button
             type="submit"
-            disabled={status === "loading"}
             style={{
               width: "100%",
               padding: "15px",
@@ -182,12 +111,11 @@ export default function Gate({
               background: "#2D6A3F",
               border: "none",
               borderRadius: "10px",
-              cursor: status === "loading" ? "default" : "pointer",
-              opacity: status === "loading" ? 0.7 : 1,
+              cursor: "pointer",
               transition: "opacity 150ms ease, background 150ms ease",
             }}
           >
-            {status === "loading" ? "Unlocking…" : "Continue  →"}
+            Continue  →
           </button>
           {error ? (
             <span style={{ color: "#C0392B", fontSize: "13px", fontFamily: "'Geist', sans-serif" }}>{error}</span>
