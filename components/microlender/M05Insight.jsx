@@ -36,11 +36,20 @@ export default function M05Insight() {
       </div>
       <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '56px', paddingInline: '64px', paddingTop: '8px', flex: 1 }}>
         {/* Left: pipeline + signal rows + decisions bar */}
-        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, marginTop: '34px', width: '760px' }}>
-          <div style={{ color: '#2D6A3F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '18px', fontWeight: 800, letterSpacing: '0.14em', lineHeight: '24px', textTransform: 'uppercase' }}>
-            Documents → Signals → Decisions
+        <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', flexShrink: 0, marginTop: '20px', width: '760px' }}>
+          <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '14px' }}>
+            {['Documents', 'Signals', 'Decisions'].map((step, i) => (
+              <div key={step} style={{ alignItems: 'center', display: 'flex', gap: '14px' }}>
+                {i > 0 && (
+                  <div style={{ color: '#2D6A3F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '17px', fontWeight: 700, lineHeight: '20px' }}>→</div>
+                )}
+                <div style={{ backgroundColor: '#2E6A3F', borderRadius: '8px', boxSizing: 'border-box', paddingBlock: '7px', paddingInline: '14px' }}>
+                  <div style={{ color: '#FFFFFF', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '15px', fontWeight: 700, letterSpacing: '0.12em', lineHeight: '18px', textTransform: 'uppercase' }}>{step}</div>
+                </div>
+              </div>
+            ))}
           </div>
-          <div style={{ color: '#0A1F0F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '22px', fontWeight: 500, lineHeight: '30px', marginTop: '10px' }}>
+          <div style={{ color: '#0A1F0F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '22px', fontWeight: 500, lineHeight: '30px', marginTop: '18px' }}>
             Using frontier vision AI pipelines developed out of Stanford&apos;s AI labs, Kita pulls risk-splitting credit signal from any uploaded document.
           </div>
           <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginTop: '22px' }}>

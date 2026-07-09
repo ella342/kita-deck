@@ -55,7 +55,7 @@ export default function M06Methodology() {
             From messy documents to measurably predictive risk signals
           </div>
           <div style={{ color: '#5A7060', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '22px', lineHeight: '150%', marginTop: '28px', marginBottom: '28px' }}>
-            Kita extracts 500+ raw signals from every uploaded file and uncovers 25+ meaningfully predictive risk signals. Near-linear and monotonic, they drop into your risk model as clean inputs in under 30 seconds.
+            Kita extracts 500+ raw signals from any uploaded file, classifies it, and uncovers 25+ meaningfully predictive risk signals fit to your docs. Near-linear and monotonic, our scores drop into your risk model as clean inputs in under 30 seconds.
           </div>
           <div style={{ backgroundColor: '#0000001A', flexShrink: 0, height: '1px', width: '100%' }} />
           <Spec label="Formats" body="PDF · Scan · Image of document · Screenshot" />
