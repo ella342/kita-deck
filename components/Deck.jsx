@@ -7,10 +7,12 @@ import CustomCursor from "@/components/CustomCursor";
 const W = 1440;
 const H = 900;
 
-// `slides` is an array of { id, fullBleed, node } where `node` is a
-// server-rendered slide element passed down from the (auth-gated) server page.
-// Keeping the content as Server Components means it lives only in the RSC payload
-// for authenticated requests — never in a public client JS bundle.
+// Shared deck player. `slides` is an array of { id, fullBleed, node } where
+// `node` is a server-rendered slide element passed down from the (auth-gated)
+// server page. Keeping the content as Server Components means it lives only in
+// the RSC payload for authenticated requests — never in a public client JS
+// bundle, so there is deliberately no default: importing a slide list here
+// would pull it into the client bundle for every deck.
 export default function Deck({ slides }) {
   const TOTAL = slides.length;
   const [current, setCurrent] = useState(0);
@@ -35,7 +37,7 @@ export default function Deck({ slides }) {
     lock.current = true;
     setCurrent(t);
     setTimeout(() => { lock.current = false; }, 500);
-  }, []);
+  }, [TOTAL]);
   const next = useCallback(() => goTo(curRef.current + 1), [goTo]);
   const prev = useCallback(() => goTo(curRef.current - 1), [goTo]);
 
@@ -65,6 +67,8 @@ export default function Deck({ slides }) {
   };
 
   const slide = slides[current];
+  // Transitional: microlender still passes Components. Dropped once it moves to nodes.
+  const body = slide.node ?? <slide.Component />;
   const progress = (current / (TOTAL - 1)) * 100;
   const barTop = "calc(100% - 7px)";
 
@@ -111,14 +115,14 @@ export default function Deck({ slides }) {
           style={{ position: "absolute", inset: 0 }}
         >
           {slide.fullBleed ? (
-            slide.node
+            body
           ) : (
             <div style={{
               position: "absolute", top: "50%", left: "50%", width: W, height: H,
               transform: `translate(-50%, -50%) scale(${scale})`, transformOrigin: "center",
             }}>
               <div className="deck-stage deck-anim is-in" style={{ width: W, height: H }}>
-                {slide.node}
+                {body}
               </div>
             </div>
           )}

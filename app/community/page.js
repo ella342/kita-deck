@@ -1,7 +1,8 @@
 import { cookies } from "next/headers";
-import Gate from "./Gate";
+import Gate from "@/components/Gate";
 import Deck from "@/components/Deck";
 import { SLIDES } from "@/components/deck/Slides";
+import { DECKS } from "@/lib/decks";
 
 // The deck lives at /community. Show the password gate until unlocked, then
 // render the slides at the same URL — no separate /deck path.
@@ -13,8 +14,8 @@ import { SLIDES } from "@/components/deck/Slides";
 // request only ever produces the <Gate> markup.
 export default async function Community() {
   const store = await cookies();
-  const authed = store.get("kita_access")?.value === "2";
-  if (!authed) return <Gate />;
+  const { cookie, token } = DECKS.community;
+  if (store.get(cookie)?.value !== token) return <Gate deck="community" />;
 
   const slides = SLIDES.map(({ id, fullBleed, Component }) => ({
     id,

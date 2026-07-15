@@ -3,7 +3,14 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Gate() {
+// Shared password gate. Posts to /api/unlock (which sets the kita_access
+// cookie), then refreshes so the server component renders the deck at the
+// same URL. Copy is configurable per deck.
+export default function Gate({
+  deck = "community",
+  blurb = "Enter the password to view the Kita deck for community lenders.",
+  footerLabel = "Kita · Community Lending",
+}) {
   const router = useRouter();
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -18,7 +25,7 @@ export default function Gate() {
       const res = await fetch("/api/unlock", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ password, deck }),
       });
       const data = await res.json();
       if (!res.ok || !data.ok) {
@@ -101,7 +108,7 @@ export default function Gate() {
           Enter password.
         </h1>
         <p style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px,2.4vw,17px)", lineHeight: 1.5, maxWidth: "30ch" }}>
-          Enter the password to view the Kita deck for community lenders.
+          {blurb}
         </p>
 
         <form onSubmit={onSubmit} style={{ width: "100%", display: "flex", flexDirection: "column", gap: "12px", marginTop: "8px" }}>
@@ -197,7 +204,7 @@ export default function Gate() {
             color: "#8A9E8F",
           }}
         >
-          Kita · Community Lending
+          {footerLabel}
         </p>
       </div>
     </main>
