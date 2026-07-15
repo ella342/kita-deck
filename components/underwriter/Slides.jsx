@@ -1,6 +1,7 @@
-// The underwriter deck: the community deck's narrative, rewritten for banks in
-// any market. Same slide order and file numbering as components/deck/exact, so a
-// file-to-file diff against its community counterpart shows only the copy deltas.
+// The underwriter deck: the community deck's narrative, rewritten for banks,
+// fintechs, and non-bank lenders in any market. Same slide order and file
+// numbering as components/deck/exact, so a file-to-file diff against its
+// community counterpart shows only the copy deltas.
 import U01Title from "./U01Title";
 import U02About from "./U02About";
 import U03BackedBy from "./U03BackedBy";

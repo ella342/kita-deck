@@ -6,7 +6,7 @@ import { DECKS } from "@/lib/decks";
 
 const TITLE = "Kita — AI for Underwriting";
 const DESCRIPTION =
-  "Kita reads the documents a business already has, in any format and any language, and drafts a cited credit memo. Responsible AI for underwriting, built for banks in any market.";
+  "Kita reads the documents a business already has, in any format and any language, and drafts a cited credit memo. Responsible AI for underwriting, built for banks, fintechs, and non-bank lenders in any market.";
 
 export const metadata = {
   title: TITLE,
@@ -41,7 +41,7 @@ export default async function Underwriter() {
     return (
       <Gate
         deck="underwriter"
-        blurb="Enter the password to view the Kita deck for banks."
+        blurb="Enter the password to view the Kita deck for banks, fintechs, and non-bank lenders."
         footerLabel="Kita · Underwriting"
       />
     );

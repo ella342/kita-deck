@@ -24,7 +24,7 @@ export default function U01Title() {
           </h1>
           <p
             style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px, 1.5vw, 22px)", lineHeight: 1.45, letterSpacing: "-0.005em", maxWidth: "820px" }}>
-            Kita is responsible AI for underwriting, built for banks in any market and any language. Every recommendation cited and auditable, every decision still yours, so your team decides in minutes on files that used to take weeks.
+            Kita is responsible AI for underwriting, built for banks, fintechs, and non-bank lenders in any market and any language. Every recommendation cited and auditable, every decision still yours, so your team decides in minutes, not weeks.
           </p>
         </div>
         <div
