@@ -2,14 +2,17 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { SLIDES } from "@/components/deck/Slides";
 import CustomCursor from "@/components/CustomCursor";
 
-const TOTAL = SLIDES.length;
 const W = 1440;
 const H = 900;
 
-export default function Deck() {
+// `slides` is an array of { id, fullBleed, node } where `node` is a
+// server-rendered slide element passed down from the (auth-gated) server page.
+// Keeping the content as Server Components means it lives only in the RSC payload
+// for authenticated requests — never in a public client JS bundle.
+export default function Deck({ slides }) {
+  const TOTAL = slides.length;
   const [current, setCurrent] = useState(0);
   const [scale, setScale] = useState(1);
   const curRef = useRef(0);
@@ -61,8 +64,7 @@ export default function Deck() {
     touchX.current = null;
   };
 
-  const slide = SLIDES[current];
-  const Slide = slide.Component;
+  const slide = slides[current];
   const progress = (current / (TOTAL - 1)) * 100;
   const barTop = "calc(100% - 7px)";
 
@@ -109,14 +111,14 @@ export default function Deck() {
           style={{ position: "absolute", inset: 0 }}
         >
           {slide.fullBleed ? (
-            <Slide />
+            slide.node
           ) : (
             <div style={{
               position: "absolute", top: "50%", left: "50%", width: W, height: H,
               transform: `translate(-50%, -50%) scale(${scale})`, transformOrigin: "center",
             }}>
               <div className="deck-stage deck-anim is-in" style={{ width: W, height: H }}>
-                <Slide />
+                {slide.node}
               </div>
             </div>
           )}
@@ -136,7 +138,7 @@ export default function Deck() {
 
       {/* dots */}
       <div style={{ position: "fixed", bottom: 20, left: "50%", transform: "translateX(-50%)", display: "flex", gap: 7, zIndex: 50 }}>
-        {SLIDES.map((s, i) => (
+        {slides.map((s, i) => (
           <button key={s.id} onClick={() => goTo(i)} aria-label={`Slide ${i + 1}`}
             style={{ width: i === current ? 20 : 7, height: 7, borderRadius: 4, border: "none", cursor: "pointer", padding: 0,
               background: i === current ? "#2D6A3F" : "rgba(0,0,0,0.16)", transition: "all 240ms ease" }} />

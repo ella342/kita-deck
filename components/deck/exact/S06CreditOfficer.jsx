@@ -1,13 +1,5 @@
-"use client";
-import { motion } from "framer-motion";
-
-const thread = { hidden: {}, show: { transition: { staggerChildren: 0.28, delayChildren: 0.18 } } };
-const msg = {
-  hidden: { opacity: 0, y: 12, scale: 0.92 },
-  show: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 460, damping: 26 } },
-};
-const typingV = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { duration: 0.4 } } };
-
+// Server Component — no client JS, so the sample chat content is never shipped
+// in a public bundle chunk. The live "typing" dot uses the CSS `.deck-pulse`.
 function SpecRow({ label, value }) {
   return (
     <div style={{ alignItems: 'flex-start', borderBottomColor: '#00000012', borderBottomStyle: 'solid', borderBottomWidth: '1px', boxSizing: 'border-box', display: 'flex', gap: '24px', paddingBlock: '14px' }}>
@@ -61,14 +53,14 @@ export default function S06CreditOfficer() {
                 <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.04em', lineHeight: '12px' }}>TODAY · 10:42</div>
               </div>
               <div style={{ backgroundColor: '#E8E4DC', flexShrink: 0, height: '1px', width: '100%' }} />
-              <motion.div variants={thread} initial="hidden" animate="show" style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                <motion.div variants={msg} style={{ alignSelf: 'flex-start', backgroundColor: '#F2F1EC', borderRadius: '4px 16px 16px 16px', maxWidth: '80%', paddingBlock: '12px', paddingInline: '16px', transformOrigin: 'bottom left' }}>
+              <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ alignSelf: 'flex-start', backgroundColor: '#F2F1EC', borderRadius: '4px 16px 16px 16px', maxWidth: '80%', paddingBlock: '12px', paddingInline: '16px', transformOrigin: 'bottom left' }}>
                   <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>Hi Rosa, this is Kita, helping with your $85k SBA microloan. To finish your file I still need two documents: your renewed business license and the 2024 P&amp;L.</div>
-                </motion.div>
-                <motion.div variants={msg} style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
+                </div>
+                <div style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
                   <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>sending the P&amp;L now</div>
-                </motion.div>
-                <motion.div variants={msg} style={{ alignItems: 'center', alignSelf: 'flex-end', backgroundColor: '#E6EFE7', borderRadius: '16px 4px 16px 16px', display: 'flex', gap: '11px', paddingBlock: '11px', paddingInline: '15px', transformOrigin: 'bottom right' }}>
+                </div>
+                <div style={{ alignItems: 'center', alignSelf: 'flex-end', backgroundColor: '#E6EFE7', borderRadius: '16px 4px 16px 16px', display: 'flex', gap: '11px', paddingBlock: '11px', paddingInline: '15px', transformOrigin: 'bottom right' }}>
                   <svg width="17" height="17" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
                     <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" fill="none" stroke="#2D6A3F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -76,22 +68,22 @@ export default function S06CreditOfficer() {
                     <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 600, lineHeight: '17px' }}>pl_2024_draft.pdf</div>
                     <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.04em', lineHeight: '12px' }}>1.4 MB · 6 PAGES</div>
                   </div>
-                </motion.div>
-                <motion.div variants={msg} style={{ alignSelf: 'flex-start', backgroundColor: '#F2F1EC', borderRadius: '4px 16px 16px 16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '7px', maxWidth: '82%', paddingBlock: '12px', paddingInline: '16px', transformOrigin: 'bottom left' }}>
+                </div>
+                <div style={{ alignSelf: 'flex-start', backgroundColor: '#F2F1EC', borderRadius: '4px 16px 16px 16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '7px', maxWidth: '82%', paddingBlock: '12px', paddingInline: '16px', transformOrigin: 'bottom left' }}>
                   <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '6px' }}>
                     <div style={{ color: '#4CAF72', fontFamily: 'system-ui, sans-serif', fontSize: '11px', lineHeight: '11px' }}>✓</div>
                     <div style={{ color: '#4CAF72', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', fontWeight: 600, letterSpacing: '0.08em', lineHeight: '12px' }}>DOC ACCEPTED · AUTO-VALIDATED</div>
                   </div>
                   <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>P&amp;L 2024 received and validated. Deposits reconcile within 2%. One item left: the renewed business license.</div>
-                </motion.div>
-                <motion.div variants={msg} style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
+                </div>
+                <div style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
                   <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>license coming today</div>
-                </motion.div>
-                <motion.div variants={typingV} style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px', marginTop: '1px' }}>
-                  <motion.div animate={{ opacity: [1, 0.3, 1] }} transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }} style={{ backgroundColor: '#8FB89A', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
+                </div>
+                <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px', marginTop: '1px' }}>
+                  <div className="deck-pulse" style={{ backgroundColor: '#8FB89A', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
                   <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.08em', lineHeight: '12px' }}>ROSA IS TYPING…</div>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

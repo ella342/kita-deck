@@ -62,6 +62,11 @@ body {
   border-left-color: #2D6A3F !important;
 }
 
+/* Standalone pulse for live/typing indicators (replaces framer-motion loops so
+   slides can stay Server Components and never ship their content in the JS bundle) */
+@keyframes deckPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+.deck-pulse { animation: deckPulse 1.6s ease-in-out infinite; }
+
 /* Slide transition: quick whole-slide fade on exit; staggered fade-up on enter */
 .deck-anim { transition: opacity 180ms ease; }
 .deck-anim.is-out { opacity: 0; }
