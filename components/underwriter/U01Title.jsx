@@ -20,11 +20,11 @@ export default function U01Title() {
           <h1
             style={{ margin: 0, fontWeight: 700, fontSize: "clamp(38px, 6.6vw, 96px)", lineHeight: 1.0, letterSpacing: "-0.03em" }}>
             <span style={{ color: "#16291C" }}>Superpower your underwriters with AI.</span><br />
-            <span style={{ color: "#2D6A3F" }}>Serve more of your community.</span>
+            <span style={{ color: "#2D6A3F" }}>Decide faster. Approve more.</span>
           </h1>
           <p
             style={{ margin: 0, color: "#5A7060", fontSize: "clamp(15px, 1.5vw, 22px)", lineHeight: 1.45, letterSpacing: "-0.005em", maxWidth: "820px" }}>
-            Kita is responsible AI for underwriting, built for CDFIs, community lenders, and credit unions. Every recommendation cited and auditable, every decision still yours, so a small team can say yes to more of your community.
+            Kita is responsible AI for underwriting, built for banks in any market and any language. Every recommendation cited and auditable, every decision still yours, so your team decides in minutes on files that used to take weeks.
           </p>
         </div>
         <div

@@ -21,18 +21,18 @@ export default function U04Problem() {
             <div style={{ backgroundColor: '#418D62', borderRadius: '50%', flexShrink: 0, height: '6px', width: '6px' }} />
             <div style={{ color: '#418D62', fontFamily: '"Geist Mono", system-ui, sans-serif', fontSize: '13px', fontWeight: 500, letterSpacing: '0.18em', lineHeight: '16px', textTransform: 'uppercase' }}>the problem</div>
           </div>
-          <div style={{ color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%', maxWidth: '760px' }}>Good borrowers fall through the cracks.</div>
+          <div style={{ color: '#1A3320', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '108%', maxWidth: '760px' }}>Good deals die in the queue.</div>
         </div>
-        <div style={{ color: '#5A7060', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right', width: '459px' }}>Lean teams stitch together manual tools and chase documents for weeks. Files pile up, and the community you exist to serve waits, or gets lost along the way.</div>
+        <div style={{ color: '#5A7060', flexShrink: 0, fontFamily: '"Geist", system-ui, sans-serif', fontSize: '18px', lineHeight: '22px', maxWidth: '380px', textAlign: 'right', width: '459px' }}>Analysts stitch together manual tools and chase documents for weeks. Files pile up, costs climb, and borrowers go to whoever decides first.</div>
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '22px', paddingBottom: '28px', paddingInline: '56px' }}>
         <div style={{ display: 'flex', gap: '22px' }}>
-          <PCard n="01" fixed title="Document collection drags on for weeks." body="Files arrive piecemeal over email, Dropbox, even paper, and chasing them can take 30 days to a year." />
+          <PCard n="01" fixed title="Document collection drags on for weeks." body="Files arrive piecemeal over email, portals, even paper, and every day you spend chasing is a day the borrower shops elsewhere." />
           <PCard n="02" title="A patchwork of disconnected tools." body="Spread financials in one system, underwrite in another, email PDFs to committee. Nothing talks to each other." />
         </div>
         <div style={{ display: 'flex', gap: '22px' }}>
-          <PCard n="03" fixed title="Two underwriters, endless files." body="Manual review doesn't scale. A small team can only get through so many files by hand." />
-          <PCard n="04" title="Mission-fit borrowers get declined." body="Thin-file and nontraditional-income applicants are hard to assess by hand, so the community you exist to serve gets turned away." />
+          <PCard n="03" fixed title="Every file costs analyst hours." body="Manual review scales only by hiring. Volume climbs, cost per file holds, and your best analysts spend their day on data entry." />
+          <PCard n="04" title="The same file, different answers." body="Decisions drift between analysts, branches, and markets, and when the regulator asks why, the reasoning lives in someone's inbox." />
         </div>
       </div>
     </div>

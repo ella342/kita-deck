@@ -52,7 +52,7 @@ export default function U07Underwriter() {
               <div style={{ alignItems: 'flex-start', boxSizing: 'border-box', display: 'flex', gap: '16px', justifyContent: 'space-between' }}>
                 <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '5px' }}>
                   <div style={{ color: '#8A9E8F', fontFamily: '"Geist Mono", system-ui, sans-serif', fontSize: '11px', fontWeight: 600, letterSpacing: '0.12em', lineHeight: '14px', textTransform: 'uppercase' }}>Draft credit memo</div>
-                  <div style={{ color: '#0A1F0F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: '120%' }}>Rosa Mendoza · $85K SBA 7(a)</div>
+                  <div style={{ color: '#0A1F0F', fontFamily: '"Geist", system-ui, sans-serif', fontSize: '20px', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: '120%' }}>Meridian Foods · $340K revolver</div>
                 </div>
                 <div style={{ alignItems: 'center', backgroundColor: '#E4F0E8', borderColor: '#2D6A3F33', borderRadius: '8px', borderStyle: 'solid', borderWidth: '1px', display: 'flex', flexShrink: 0, gap: '7px', paddingBlock: '7px', paddingInline: '12px' }}>
                   <div style={{ backgroundColor: '#2D6A3F', borderRadius: '50%', flexShrink: 0, height: '6px', width: '6px' }} />
@@ -62,10 +62,10 @@ export default function U07Underwriter() {
               <div style={{ backgroundColor: '#00000012', flexShrink: 0, height: '1px' }} />
               <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 <div style={{ color: '#8A9E8F', fontFamily: '"Geist Mono", system-ui, sans-serif', fontSize: '11px', fontWeight: 600, letterSpacing: '0.12em', lineHeight: '14px', textTransform: 'uppercase' }}>Supporting evidence · cited</div>
-                <EvRow claim="DSCR 1.42×, above policy floor" src="bank_stmt.pdf" />
-                <EvRow claim="Revenue +18% year over year" src="pl_2024.pdf" />
-                <EvRow claim="Cash buffer 4.1 months payroll" src="bank_stmt.pdf" />
-                <EvRow claim="Mission fit: minority-owned, LMI census tract" src="application.pdf" />
+                <EvRow claim="DSCR 1.42×, above the 1.25× policy floor" src="financials_fy2025.pdf" />
+                <EvRow claim="Revenue $4.2M, +18% year over year" src="financials_fy2025.pdf" />
+                <EvRow claim="Cash $142,380, 4.1 months of payroll" src="bank_stmt_q2.pdf" />
+                <EvRow claim="Top customer 22% of revenue, within limit" src="ar_aging_jun26.pdf" />
               </div>
               <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '12px', paddingTop: '4px' }}>
                 <div style={{ alignItems: 'center', borderColor: '#00000022', borderRadius: '10px', borderStyle: 'solid', borderWidth: '1px', display: 'flex', flexBasis: '0%', flexGrow: 1, justifyContent: 'center', paddingBlock: '13px' }}>

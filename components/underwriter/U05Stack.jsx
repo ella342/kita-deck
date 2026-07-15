@@ -32,7 +32,7 @@ export default function U05Stack() {
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', flexShrink: 0, gap: '24px', height: '388px', paddingBottom: '20px', paddingInline: '56px', width: '1440px' }}>
         <SCard n="01" title="AI Credit Officer" body="Runs the back-and-forth with the borrower over SMS, email, or any channel they prefer, in any language, and chases down every missing document." tag="Completes loan file." href="https://www.kita.ai/underwriting" />
-        <SCard n="02" title="Kita Capture" body="Reads, verifies, and cross-checks any set of documents. Flags discrepancies and assesses creditworthiness even from non-standard income and messy business files." tag="Extracts and verifies." href="https://www.kita.ai/capture" />
+        <SCard n="02" title="Kita Capture" body="Reads, verifies, and cross-checks any set of documents, in any format or language. Flags discrepancies and assesses creditworthiness even from messy, non-standard business files." tag="Extracts and verifies." href="https://www.kita.ai/capture" />
         <SCard n="03" title="AI Underwriter" body="Analyzes the financials against your own credit policy and drafts the credit memo, every number cited, for your underwriter to review and decide." tag="Drafts the memo." href="https://www.kita.ai/risk-engine" />
       </div>
     </div>

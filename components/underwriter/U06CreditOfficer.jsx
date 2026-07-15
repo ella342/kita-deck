@@ -33,7 +33,7 @@ export default function U06CreditOfficer() {
             <div style={{ backgroundColor: '#0000001A', flexShrink: 0, height: '1px', width: '100%' }} />
             <SpecRow label="CHANNELS" value="SMS · Email · WhatsApp · Web chat" />
             <SpecRow label="VALIDATION" value="Real-time upload & validation on the spot" />
-            <SpecRow label="LANGUAGES" value="English · Spanish · Mandarin · 30+ more" />
+            <SpecRow label="LANGUAGES" value="Auto-detects and replies in 30+ languages" />
             <SpecRow label="HANDOFF" value="100%-complete file to AI Underwriter" />
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function U06CreditOfficer() {
                   </div>
                   <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '3px' }}>
                     <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '16px', fontWeight: 700, lineHeight: '18px' }}>Kita Credit Officer</div>
-                    <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.04em', lineHeight: '12px' }}>SMS · +1 (209) · FILE #4471</div>
+                    <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.04em', lineHeight: '12px' }}>SMS · MERIDIAN FOODS · FILE #4471</div>
                   </div>
                 </div>
                 <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.04em', lineHeight: '12px' }}>TODAY · 10:42</div>
@@ -55,18 +55,18 @@ export default function U06CreditOfficer() {
               <div style={{ backgroundColor: '#E8E4DC', flexShrink: 0, height: '1px', width: '100%' }} />
               <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <div style={{ alignSelf: 'flex-start', backgroundColor: '#F2F1EC', borderRadius: '4px 16px 16px 16px', maxWidth: '80%', paddingBlock: '12px', paddingInline: '16px', transformOrigin: 'bottom left' }}>
-                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>Hi Rosa, this is Kita, helping with your $85k SBA microloan. To finish your file I still need two documents: your renewed business license and the 2024 P&amp;L.</div>
+                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>Hi Ana, this is Kita, helping with Meridian Foods&apos; $340K working capital facility. To finish the file I still need two documents: the FY2025 financials and your current receivables aging.</div>
                 </div>
                 <div style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
-                  <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>sending the P&amp;L now</div>
+                  <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>sending the financials now</div>
                 </div>
                 <div style={{ alignItems: 'center', alignSelf: 'flex-end', backgroundColor: '#E6EFE7', borderRadius: '16px 4px 16px 16px', display: 'flex', gap: '11px', paddingBlock: '11px', paddingInline: '15px', transformOrigin: 'bottom right' }}>
                   <svg width="17" height="17" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
                     <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" fill="none" stroke="#2D6A3F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 600, lineHeight: '17px' }}>pl_2024_draft.pdf</div>
-                    <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.04em', lineHeight: '12px' }}>1.4 MB · 6 PAGES</div>
+                    <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 600, lineHeight: '17px' }}>financials_fy2025.pdf</div>
+                    <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.04em', lineHeight: '12px' }}>2.1 MB · 14 PAGES</div>
                   </div>
                 </div>
                 <div style={{ alignSelf: 'flex-start', backgroundColor: '#F2F1EC', borderRadius: '4px 16px 16px 16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '7px', maxWidth: '82%', paddingBlock: '12px', paddingInline: '16px', transformOrigin: 'bottom left' }}>
@@ -74,14 +74,14 @@ export default function U06CreditOfficer() {
                     <div style={{ color: '#4CAF72', fontFamily: 'system-ui, sans-serif', fontSize: '11px', lineHeight: '11px' }}>✓</div>
                     <div style={{ color: '#4CAF72', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', fontWeight: 600, letterSpacing: '0.08em', lineHeight: '12px' }}>DOC ACCEPTED · AUTO-VALIDATED</div>
                   </div>
-                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>P&amp;L 2024 received and validated. Deposits reconcile within 2%. One item left: the renewed business license.</div>
+                  <div style={{ color: '#1F2421', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '20px' }}>FY2025 financials received and validated. Revenue reconciles to your bank deposits within 2%. One item left: the receivables aging.</div>
                 </div>
                 <div style={{ alignSelf: 'flex-end', backgroundColor: '#2D5A37', borderRadius: '16px 4px 16px 16px', paddingBlock: '11px', paddingInline: '16px', transformOrigin: 'bottom right' }}>
-                  <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>license coming today</div>
+                  <div style={{ color: '#FFFFFF', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', lineHeight: '18px' }}>aging report coming today</div>
                 </div>
                 <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px', marginTop: '1px' }}>
                   <div className="deck-pulse" style={{ backgroundColor: '#8FB89A', borderRadius: '50%', flexShrink: 0, height: '7px', width: '7px' }} />
-                  <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.08em', lineHeight: '12px' }}>ROSA IS TYPING…</div>
+                  <div style={{ color: '#8A9E8F', fontFamily: '"JetBrains Mono", system-ui, sans-serif', fontSize: '10px', letterSpacing: '0.08em', lineHeight: '12px' }}>ANA IS TYPING…</div>
                 </div>
               </div>
             </div>

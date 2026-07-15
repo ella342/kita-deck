@@ -6,11 +6,11 @@ const STATUS = {
   'AWAITING DOCS': ['#F3E9D8', '#9A6B22'],
 };
 const ROWS = [
-  ['Rosa Mendoza', 'Debt consolidation', '$32,000', 'Personal', 'MEMO DRAFTED', '2 min ago', true],
-  ['James Okafor', '2023 Ford F-150', '$52,000', 'Auto', 'UNDERWRITING', '18 min ago', false],
-  ['Dolores Reyes', 'Medical expenses', '$14,500', 'Personal', 'AWAITING DOCS', '1 hr ago', false],
-  ['Aisha Bello', 'Home purchase', '$345,000', 'Mortgage', 'MEMO DRAFTED', '2 hr ago', false],
-  ['Marco Tan', '2022 Honda CR-V', '$34,000', 'Auto', 'UNDERWRITING', 'Today', false],
+  ['Meridian Foods Ltd', 'Working capital', '$340,000', 'Revolving', 'MEMO DRAFTED', '2 min ago', true],
+  ['Halstead Logistics', 'Fleet expansion', '$780,000', 'Equipment', 'UNDERWRITING', '18 min ago', false],
+  ['Corvia Textiles', 'Inventory financing', '$215,000', 'Revolving', 'AWAITING DOCS', '1 hr ago', false],
+  ['Lattice Property Group', 'Warehouse purchase', '$1,250,000', 'Real estate', 'MEMO DRAFTED', '2 hr ago', false],
+  ['Arbor Clinics Group', 'Equipment upgrade', '$96,000', 'Term loan', 'UNDERWRITING', 'Today', false],
 ];
 
 function Pill({ text, bg, color }) {
@@ -48,23 +48,23 @@ export default function U09Dashboard() {
           <div style={{ color: '#418D62', fontFamily: mono, fontSize: '13px', fontWeight: 500, letterSpacing: '0.18em', lineHeight: '16px', textTransform: 'uppercase' }}>full pipeline</div>
         </div>
         <div style={{ color: '#1A3320', fontFamily: sans, fontSize: '58px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>Your whole pipeline on one screen.</div>
-        <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', letterSpacing: '-0.005em', lineHeight: '27px', marginTop: '2px', maxWidth: '1040px' }}>Every file moves on its own: the AI Credit Officer chases docs, Capture reads them, the AI Underwriter drafts the memo. Your officers see it all in one place and stay in control of every decision.</div>
+        <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', letterSpacing: '-0.005em', lineHeight: '27px', marginTop: '2px', maxWidth: '1040px' }}>Every file moves on its own: the AI Credit Officer chases docs, Capture reads them, the AI Underwriter drafts the memo. Your credit team sees it all in one place and stays in control of every decision.</div>
       </div>
       <div style={{ backgroundColor: '#FCFBF7', borderColor: '#00000016', borderRadius: '18px', borderStyle: 'solid', borderWidth: '1px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginInline: '64px', marginTop: '26px', overflow: 'clip' }}>
         <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '16px', height: '78px', justifyContent: 'space-between', paddingBlock: '20px', paddingInline: '26px' }}>
           <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '14px' }}>
             <div style={{ color: '#0A1F0F', fontFamily: sans, fontSize: '18px', fontWeight: 800, letterSpacing: '-0.01em', lineHeight: '22px' }}>Applications</div>
-            <Pill text="42 ACTIVE" bg="#E4F0E8" color="#2D6A3F" />
-            <Pill text="7 AWAITING DOCS" bg="#F3E9D8" color="#9A6B22" />
-            <Pill text="3 MEMO DRAFTED" bg="#E6ECEA" color="#4A6357" />
+            <Pill text="128 ACTIVE" bg="#E4F0E8" color="#2D6A3F" />
+            <Pill text="19 AWAITING DOCS" bg="#F3E9D8" color="#9A6B22" />
+            <Pill text="11 MEMO DRAFTED" bg="#E6ECEA" color="#4A6357" />
           </div>
           <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '8px' }}>
-            <FilterChip text="STATUS" /><FilterChip text="TYPE" /><FilterChip text="LOAN SIZE" /><FilterChip text="OFFICER" />
+            <FilterChip text="STATUS" /><FilterChip text="TYPE" /><FilterChip text="LOAN SIZE" /><FilterChip text="OFFICER" /><FilterChip text="BRANCH" />
           </div>
         </div>
         <div style={{ backgroundColor: '#0000000F', flexShrink: 0, height: '1px' }} />
         <div style={{ alignItems: 'center', backgroundColor: '#00000005', boxSizing: 'border-box', display: 'flex', paddingBlock: '13px', paddingInline: '26px' }}>
-          <Th w="220px">BORROWER</Th><Th w="290px">PURPOSE</Th><Th w="120px">AMOUNT</Th><Th w="150px">TYPE</Th><Th w="200px">STATUS</Th><Th right>SUBMITTED</Th>
+          <Th w="220px">APPLICANT</Th><Th w="290px">PURPOSE</Th><Th w="120px">AMOUNT</Th><Th w="150px">TYPE</Th><Th w="200px">STATUS</Th><Th right>SUBMITTED</Th>
         </div>
         {ROWS.map(([name, purpose, amt, type, status, time, hot], i) => {
           const [bg, color] = STATUS[status];

@@ -52,6 +52,8 @@ export default function U10Integration() {
         <SpecCol title="Auth" value="API key · OAuth 2.0" />
         <div style={{ backgroundColor: '#D0CCC0', flexShrink: 0, width: '1px' }} />
         <SpecCol title="Docs" value="OpenAPI spec included" />
+        <div style={{ backgroundColor: '#D0CCC0', flexShrink: 0, width: '1px' }} />
+        <SpecCol title="Deployment" value="Cloud · in-region · on-prem" />
       </div>
       <div style={{ boxSizing: 'border-box', height: '14px', marginTop: '-39px', width: '53px' }} />
     </div>

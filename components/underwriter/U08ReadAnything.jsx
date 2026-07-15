@@ -59,11 +59,12 @@ export default function U08ReadAnything() {
             <div style={{ color: '#1F2421', fontFamily: sans, fontSize: '56px', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: '106%' }}>Extract and verify credit data across documents.</div>
           </div>
           <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', marginTop: '28px', width: '656px' }}>
-            <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', lineHeight: '165%', marginBottom: '28px' }}>Capture reads any set of documents, then verifies income across the full set, cross-checks the numbers between documents, and flags discrepancies – so you can assess creditworthiness even from non-standard income and messy business files.</div>
+            <div style={{ color: '#5A7060', fontFamily: sans, fontSize: '18px', lineHeight: '165%', marginBottom: '28px' }}>Capture reads any set of documents, then verifies revenue across the full set, cross-checks the numbers between documents, and flags discrepancies, so you can underwrite from the files a business actually has, in any format and any language.</div>
             <div style={{ backgroundColor: '#0000001A', flexShrink: 0, height: '1px', width: '100%' }} />
-            <SpecRow label="FORMATS" value="PDF · Scan · Image of document · Screenshot" />
+            <SpecRow label="FORMATS" value="PDF · Scan · Photo of a document · Screenshot" />
             <SpecRow label="RESOLUTION" value="150 dpi to 4K. Auto-upscale on degraded inputs." />
             <SpecRow label="CONDITION" value="Skew · glare · folds · stamps · handwriting · laminated" />
+            <SpecRow label="COVERAGE" value="30+ languages, any jurisdiction." />
             <SpecRow label="FRAUD" value="Flags tampering, forgery & edited fields" />
           </div>
         </div>
@@ -89,14 +90,14 @@ export default function U08ReadAnything() {
               </div>
               <div style={{ backgroundColor: '#3B82F60A', borderColor: '#162B1C', borderRadius: '6px', borderStyle: 'solid', borderWidth: '2px', boxSizing: 'border-box', padding: '10px', position: 'relative' }}>
                 <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '5px', paddingTop: '4px' }}>
-                  <KV k="Account Name" v="Rosa Mendoza" />
+                  <KV k="Account Name" v="Meridian Foods Ltd" />
                   <KV k="Account No." v="3344 0019 9182" />
                   <KV k="Currency" v="USD" />
                 </div>
                 <Tab bg="#162A1C">ACCOUNT INFO</Tab>
               </div>
               <div style={{ backgroundColor: '#10B9810A', borderColor: '#10B98199', borderRadius: '6px', borderStyle: 'solid', borderWidth: '2px', boxSizing: 'border-box', paddingBlock: '8px', paddingInline: '10px', position: 'relative' }}>
-                <div style={{ paddingTop: '2px' }}><KV k="Statement Period" v="Jan 2024 – Mar 2024" /></div>
+                <div style={{ paddingTop: '2px' }}><KV k="Statement Period" v="Apr 2026 – Jun 2026" /></div>
                 <Tab bg="#10B981">PERIOD</Tab>
               </div>
               <div style={{ backgroundColor: '#F59E0B0A', borderColor: '#318757', borderRadius: '6px', borderStyle: 'solid', borderWidth: '2px', boxSizing: 'border-box', flexBasis: '0%', flexGrow: 1, padding: '10px', paddingBottom: '14px', position: 'relative' }}>
@@ -110,7 +111,7 @@ export default function U08ReadAnything() {
                 <Tab bg="#3A8A5C" color="#FAF8F8">TRANSACTIONS</Tab>
               </div>
               <div style={{ backgroundColor: '#8B5CF60A', borderColor: '#1A5635', borderRadius: '6px', borderStyle: 'solid', borderWidth: '2px', boxSizing: 'border-box', paddingBlock: '8px', paddingInline: '10px', position: 'relative' }}>
-                <div style={{ paddingTop: '2px' }}><KV k="Closing Balance" v="USD14,380.50" vw="10px" /></div>
+                <div style={{ paddingTop: '2px' }}><KV k="Closing Balance" v="USD 142,380.50" vw="10px" /></div>
                 <Tab bg="#1A5635">ENDING BALANCE</Tab>
               </div>
             </div>
@@ -126,8 +127,8 @@ export default function U08ReadAnything() {
               <div style={{ color: '#FFFFFF', fontFamily: mono, fontSize: '9px', fontWeight: 500, letterSpacing: '0.03em', lineHeight: '12px' }}>VLM</div>
             </div>
             <div style={{ boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '26px', position: 'absolute', right: '0px', top: '70px', width: '150px', zIndex: 20 }}>
-              <FloatCard dot="#162B1C" label="ACCOUNT" value="Rosa Mendoza" conf="conf: 0.99" />
-              <FloatCard dot="#10B981" label="PERIOD" value="Jan–Mar 2024" conf="conf: 0.97" />
+              <FloatCard dot="#162B1C" label="ACCOUNT" value="Meridian Foods Ltd" conf="conf: 0.99" />
+              <FloatCard dot="#10B981" label="PERIOD" value="Apr–Jun 2026" conf="conf: 0.97" />
               <FloatCard dot="#3A8A5C" label="TRANSACTIONS" value="47 rows detected" conf="conf: 0.96" />
               <FloatCard dot="#1A5635" label="BALANCE" value="$142,380.50" conf="conf: 0.98" />
             </div>

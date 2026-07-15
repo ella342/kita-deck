@@ -42,7 +42,7 @@ export default function U11Outcomes() {
       </div>
       <div style={{ boxSizing: 'border-box', display: 'flex', gap: '24px', paddingInline: '56px', width: '1440px' }}>
         <OCard label="SPEED" title={"Faster\nTurnaround"} num="90" unit="%" caption="time saved." priorLabel="PRIOR" priorVal="5hrs → minutes" />
-        <OCard label="COVERAGE" title={"Serve\nMore"} num="31" unit="%" caption="more of your community reached." priorLabel="PRIOR" priorVal="thin-file borrowers declined by hand" />
+        <OCard label="COVERAGE" title={"Approve\nMore"} num="31" unit="%" caption="more applications in, and more approved." priorLabel="PRIOR" priorVal="good files declined for lack of time" />
         <OCard label="COST" title={"Lower\nCosts"} num="−68" unit="%" caption="cost per processed application." priorLabel="PAYBACK" priorVal={'< 90 DAYS'} />
       </div>
     </div>
