@@ -67,8 +67,6 @@ export default function Deck({ slides }) {
   };
 
   const slide = slides[current];
-  // Transitional: microlender still passes Components. Dropped once it moves to nodes.
-  const body = slide.node ?? <slide.Component />;
   const progress = (current / (TOTAL - 1)) * 100;
   const barTop = "calc(100% - 7px)";
 
@@ -115,14 +113,14 @@ export default function Deck({ slides }) {
           style={{ position: "absolute", inset: 0 }}
         >
           {slide.fullBleed ? (
-            body
+            slide.node
           ) : (
             <div style={{
               position: "absolute", top: "50%", left: "50%", width: W, height: H,
               transform: `translate(-50%, -50%) scale(${scale})`, transformOrigin: "center",
             }}>
               <div className="deck-stage deck-anim is-in" style={{ width: W, height: H }}>
-                {body}
+                {slide.node}
               </div>
             </div>
           )}
